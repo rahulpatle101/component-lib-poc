@@ -79,6 +79,8 @@ live-server
 
 ```
 
+* Open browser you should be able to see the live site on http://127.0.0.1:8080
+
 
 
 
