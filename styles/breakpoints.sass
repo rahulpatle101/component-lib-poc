@@ -1,0 +1,30 @@
+$small          : 48rem
+// 768px
+
+$sm-transition  : 54rem
+// 864px
+
+$medium         : 62rem
+// 992px
+
+$large          : 75rem
+// 1200px
+
+@mixin breakpoint($point, $orientation:"min-width")
+  @if $point == small
+    @media ($orientation: $small) 
+      @content
+  
+  @else if $point == medium
+    @media ($orientation: $medium) 
+      @content
+  
+  @else if $point == large
+    @media ($orientation: $large) 
+      @content
+  
+  @else
+    @media ($orientation: $point)  
+      @content
+
+  

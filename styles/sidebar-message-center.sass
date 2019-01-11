@@ -1,0 +1,141 @@
+.tbd
+  padding: 0 1rem
+
+.sidebar-message-center
+  border: 1px solid $link-water
+  margin-top: 1rem
+  border-radius: .15rem
+  background: $white
+  height: 40rem
+  overflow: hidden
+  .message-type-title
+    position: relative
+    color: $black-rock
+    font-size: .8rem
+    padding: .6rem 1rem .6rem 1rem
+    text-transform: uppercase
+    border-top: 1px solid $silver
+    border-bottom: 1px solid $silver
+    background: $alabaster
+    span
+      font-family: 'proxima_novasemibold'
+      display: inline-block
+      color: $edwin
+      background: $white
+      padding: .1rem .5rem .1rem .5rem
+      position: absolute
+      right: 1rem
+      top: .4rem
+      border: 1px solid $silver
+      border-radius: .5rem
+  h1
+    font-size: 1.2rem
+    color: $slate
+    font-family: 'proxima_novaregular'
+    padding: 1.2rem 1rem
+  .message
+    margin-bottom: 1px
+    .wrapper
+      background: $white
+      position: relative
+      &:hover
+        background: $athens
+    a
+      width: 82%
+      text-decoration: none
+      padding: .8rem 1rem
+      display: inline-block
+      font-family: 'proxima_novasemibold'
+      font-size: .9rem
+
+      p
+        margin-bottom: 0
+        white-space: nowrap
+        overflow: hidden
+        text-overflow: ellipsis
+      span
+        margin-bottom: 0
+      .id
+        font-size: .8rem
+        color: $slate
+      .respond-by
+        color: $flamingo
+        font-size: .8rem
+
+      .date
+        position: absolute
+        color: $link-water
+        font-size: .6rem
+        top: 1.3rem
+        right: 1rem
+
+
+  // sidebar tabs for landing page dashboard
+  .sidebar-tabs
+    p
+      margin: 0 0 20px
+      line-height: 1.5
+    .main
+      margin: 0 auto
+      min-width: 320px
+      max-width: 800px
+    .content
+      width: 22rem
+      color: #373737
+      border-top: 1.2rem solid $white
+    .content > div
+      display: none
+    #content1
+      background: $silver
+
+    // tabs
+    input
+      display: none
+    label
+      box-sizing: border-box
+      font-size: .7rem
+      display: inline-block
+      background: $athens
+      border-top: .2rem solid $athens
+      border-bottom: 1px solid $silver
+      border-left: 1px $athens
+      border-right: 1px $athens
+      span
+        color: $white
+        background: $haze
+        margin-left: 2.5px
+        padding: 3px 3px 1px 3px
+        border-radius: 2px
+        font-size: .6rem
+        text-align: center
+        min-width: .8rem
+        display: inline-block
+    input:checked + label
+      cursor: pointer
+      border-top: .2rem solid $edwin
+      border-bottom: 1px solid $white
+      border-right: 1px solid $silver
+      border-left: 1px solid $silver
+      background: $white
+      padding: 5px 0 5px 7px
+      span
+        background: $flamingo
+    input:first-child:checked + label
+      border-left: 0
+    input#tab3:checked + label
+      border-right: 0
+
+    input:hover + label
+      cursor: pointer
+      background: $white
+      border-top: .2rem solid $edwin
+
+
+
+    #tab1:checked ~ .content #content1,
+    #tab2:checked ~ .content #content2,
+    #tab3:checked ~ .content #content3
+      display: block
+
+  [class*="grid-"][class*="-noGutter"] > [class*="col"]
+    padding: 5px 1px 5px 8px

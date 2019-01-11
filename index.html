@@ -1,0 +1,2509 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Styleguide</title>
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="brand">
+        <div class="logo"><a href="index.html"><i class="logo-eqx-icon"></i></a></div>
+        <div class="title-wrap">
+          <div class="title">Company <span class="grey-text">UI Components Library - (v1 - WIP)</span></div>
+        </div>
+      </div>
+    </header>
+    <div class="main-container flex-container">
+      <div class="sidebar-column">
+        <div class="sidebar-content">
+						<div class="panel">
+							<div class="panel-body accordion">
+									<div class="panel-heading">
+										<h1>Overview</h1>
+									</div>
+									<ul class="liContainer">
+										<li><a href="#icons">Icons</a></li>
+										<li><a href="#color-palette">Color Palette</a></li>
+										<li><a href="#header">Header</a></li>
+										<li><a href="#typography">Typography</a></li>
+										<!-- <li><a href="#page">Page</a></li> -->
+										<!-- <li><a href="#panel">Panel</a></li> -->
+										<li><a href="#link">Links</a></li>
+										<li>
+											<input type="checkbox" id="buttons-accordion" />
+											<i class="angle-right-eqx-icon"></i>
+											<i class="angle-down-eqx-icon"></i>
+											<label for="buttons-accordion">Buttons</label>
+												<div class="sub-content">
+													<a href="#button-default">Button Default</a>
+													<a href="#button-sizes">Button Size</a>
+													<a href="#button-fluid">Button Fluid</a>
+													<a href="#button-group">Button Group</a>
+													<a href="#button-group-number">Button Group Number</a>
+													<a href="#button-group-vertical">Button Group Vertical</a>
+												</div>
+						        </li>
+										<li><a href="#forms">Forms</a></li>
+										<!-- <li>
+											<input type="checkbox" id="forms-accordion" />
+											<i class="angle-right-eqx-icon"></i>
+											<i class="angle-down-eqx-icon"></i>
+											<label for="forms-accordion">Forms</label>
+												<div class="sub-content">
+													<a href="#forms">Forms & Inputs</a>
+													<a href="#inlineElements">Inline Form Elements</a>
+													<a href="#disabledElement">Disabled Element</a>
+													<a href="#errorELement">Form Error Element</a>
+													<a href="#checkboxSliderToggle">Checkbox Slider Toggle</a>
+												</div>
+										</li> -->
+										<!-- <li><a href="#modal">Modal</a></li> -->
+										<li><a href="#tooltip">Tooltip</a></li>
+										<li><a href="#banners">Banner</a></li>
+										<li><a href="#popovers">Popover</a></li>
+						    </ul>
+							</div>
+						</div>
+        </div>
+      </div>
+			<div class="content-column">
+					<!-- icons -->
+					<div class="panel" id="icons">
+						<div class="panel-heading">
+							<h1>Icons</h1>
+						</div>
+						<div class="panel-body">
+								<ul class="icon-list">
+									<li>
+										<i class="logo-eqx-icon"></i>
+										<span class="icon-text">logo-eqx-icon</span>
+									</li>
+									<li>
+										<i class="close-light-eqx-icon"></i>
+										<span class="icon-text">close-light-eqx-icon</span>
+									</li>
+									<li>
+										<i class="close-eqx-icon"></i>
+										<span class="icon-text">close-eqx-icon</span>
+									</li>
+									<li>
+										<i class="electrical-eqx-icon"></i>
+										<span class="icon-text">electrical-eqx-icon</span>
+									</li>
+									<li>
+										<i class="alarm-eqx-icon"></i>
+										<span class="icon-text">alarm-eqx-icon</span>
+									</li>
+									<li>
+										<i class="check-eqx-icon"></i>
+										<span class="icon-text">check-eqx-icon</span>
+									</li>
+									<li>
+										<i class="addreport-eqx-icon"></i>
+										<span class="icon-text">addreport-eqx-icon</span>
+									</li>
+									<li>
+										<i class="add-eqx-icon"></i>
+										<span class="icon-text">add-eqx-icon</span>
+									</li>
+									<li>
+										<i class="block-eqx-icon"></i>
+										<span class="icon-text">block-eqx-icon</span>
+									</li>
+									<li>
+										<i class="calendar-eqx-icon"></i>
+										<span class="icon-text">calendar-eqx-icon</span>
+									</li>
+									<li>
+										<i class="check-light-eqx-icon"></i>
+										<span class="icon-text">check-light-eqx-icon</span>
+									</li>
+									<li>
+										<i class="create-eqx-icon"></i>
+										<span class="icon-text">create-eqx-icon</span>
+									</li>
+									<li>
+										<i class="environment-eqx-icon"></i>
+										<span class="icon-text">environment-eqx-icon</span>
+									</li>
+									<li>
+										<i class="export-eqx-icon"></i>
+										<span class="icon-text">export-eqx-icon</span>
+									</li>
+									<li>
+										<i class="info-eqx-icon"></i>
+										<span class="icon-text">info-eqx-icon</span>
+									</li>
+									<li>
+										<i class="humiditydown-eqx-icon"></i>
+										<span class="icon-text">humiditydown-eqx-icon</span>
+									</li>
+									<li>
+										<i class="humidityup-eqx-icon"></i>
+										<span class="icon-text">humidityup-eqx-icon</span>
+									</li>
+									<li>
+										<i class="humidity-eqx-icon"></i>
+										<span class="icon-text">humidity-eqx-icon</span>
+									</li>
+									<li>
+										<i class="mechanical-eqx-icon"></i>
+										<span class="icon-text">mechanical-eqx-icon</span>
+									</li>
+									<li>
+										<i class="weather-eqx-icon"></i>
+										<span class="icon-text">weather-eqx-icon</span>
+									</li>
+									<li>
+										<i class="plug-eqx-icon"></i>
+										<span class="icon-text">plug-eqx-icon</span>
+									</li>
+									<li>
+										<i class="report-eqx-icon"></i>
+										<span class="icon-text">report-eqx-icon</span>
+									</li>
+									<li>
+										<i class="shape-eqx-icon"></i>
+										<span class="icon-text">shape-eqx-icon</span>
+									</li>
+									<li>
+										<i class="sheild-eqx-icon"></i>
+										<span class="icon-text">sheild-eqx-icon</span>
+									</li>
+									<li>
+										<i class="temp-eqx-icon"></i>
+										<span class="icon-text">temp-eqx-icon</span>
+									</li>
+									<li>
+										<i class="temperaturedown-eqx-icon"></i>
+										<span class="icon-text">temperaturedown-eqx-icon</span>
+									</li>
+									<li>
+										<i class="temperatureup-eqx-icon"></i>
+										<span class="icon-text">temperatureup-eqx-icon</span>
+									</li>
+									<li>
+										<i class="ticket-eqx-icon"></i>
+										<span class="icon-text">ticket-eqx-icon</span>
+									</li>
+									<li>
+										<i class="trash-eqx-icon"></i>
+										<span class="icon-text">trash-eqx-icon</span>
+									</li>
+									<li>
+										<i class="search-eqx-icon"></i>
+										<span class="icon-text">search-eqx-icon</span>
+									</li>
+									<li>
+										<i class="home-eqx-icon"></i>
+										<span class="icon-text">home-eqx-icon</span>
+									</li>
+									<li>
+										<i class="file-o-eqx-icon"></i>
+										<span class="icon-text">file-o-eqx-icon</span>
+									</li>
+									<li>
+										<i class="angle-double-left-eqx-icon"></i>
+										<span class="icon-text">angle-double-left-eqx-icon</span>
+									</li>
+									<li>
+										<i class="angle-double-right-eqx-icon"></i>
+										<span class="icon-text">angle-double-right-eqx-icon</span>
+									</li>
+									<li>
+										<i class="angle-double-up-eqx-icon"></i>
+										<span class="icon-text">angle-double-up-eqx-icon</span>
+									</li>
+									<li>
+										<i class="angle-double-down-eqx-icon"></i>
+										<span class="icon-text">angle-double-down-eqx-icon</span>
+									</li>
+									<li>
+										<i class="angle-left-eqx-icon"></i>
+										<span class="icon-text">angle-left-eqx-icon</span>
+									</li>
+									<li>
+										<i class="angle-right-eqx-icon"></i>
+										<span class="icon-text">angle-right-eqx-icon</span>
+									</li>
+									<li>
+										<i class="angle-up-eqx-icon"></i>
+										<span class="icon-text">angle-up-eqx-icon</span>
+									</li>
+									<li>
+										<i class="angle-down-eqx-icon"></i>
+										<span class="icon-text">angle-down-eqx-icon</span>
+									</li>
+									<li>
+										<i class="file-pdf-o-eqx-icon"></i>
+										<span class="icon-text">file-pdf-o-eqx-icon</span>
+									</li>
+									<li>
+										<i class="file-word-o-eqx-icon"></i>
+										<span class="icon-text">file-word-o-eqx-icon</span>
+									</li>
+									<li>
+										<i class="file-excel-o-eqx-icon"></i>
+										<span class="icon-text">file-excel-o-eqx-icon</span>
+									</li>
+									<li>
+										<i class="file-archive-o-eqx-icon"></i>
+										<span class="icon-text">file-archive-o-eqx-icon</span>
+									</li>
+									<li>
+										<i class="file-zip-o-eqx-icon"></i>
+										<span class="icon-text">file-zip-o-eqx-icon</span>
+									</li>
+									<li>
+										<i class="external-link-eqx-icon"></i>
+										<span class="icon-text">external-link-eqx-icon</span>
+									</li>
+									<li>
+										<i class="upload-eqx-icon"></i>
+										<span class="icon-text">upload-eqx-icon</span>
+									</li>
+									<li>
+										<i class="download-cloud-eqx-icon"></i>
+										<span class="icon-text">download-cloud-eqx-icon</span>
+									</li>
+								</ul>
+						</div>
+						<div class="panel-footer">
+							<div class="toggle-codesnippet">
+								<a data-text-original="Show Code Snippet" id="icon-code-snippet" data-text-swap="Hide Code Snippet" onclick=toggleSnippet('icon-code-snippet')>Show Code Snippet</a>
+								<div class="icon-code-snippet code-snippet">
+									<script type="text/plain" class="language-markup">
+										<i class="logo-eqx-icon"></i>
+									</script>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Color Palette -->
+					<div class="panel" id="color-palette">
+						<div class="panel-heading">
+							<h1>Color Palette</h1>
+						</div>
+						<div class="panel-body">
+							<ul class="color-list">
+								<h5>Basic Colors</h5>
+								<li>
+									<div class="color-box black">
+									</div>
+									<div class="color-info">
+										<p>
+											Black <br/>
+											#000 <br/>
+											rgba(0, 0, 0, 1) <br/>
+										</p>
+									</div>
+								</li>
+								<li>
+									<div class="color-box white">
+									</div>
+									<div class="color-info">
+										<p>
+											White <br/>
+											#FFF <br/>
+											rgba(255, 255, 255, 1) <br/>
+										</p>
+									</div>
+								</li>
+								<li>
+									<div class="color-box equinix-red">
+									</div>
+									<div class="color-info">
+										<p>
+											Equinix Red <br/>
+											#ED1C24 <br/>
+											rgba(237, 29, 37, 1) <br/>
+										</p>
+									</div>
+								</li>
+							</ul>
+							<ul class="color-list">
+								<h5>Primary Colors - Actionable Elements - Blues</h5>
+								<li>
+									<div class="color-box sea-blue">
+									</div>
+									<div class="color-info">
+										<p>
+											Sea Blue <br/>
+											#05668D <br/>
+											rgba(5, 102, 141, 1) <br/>
+										</p>
+									</div>
+								</li>
+								<li>
+									<div class="color-box science">
+									</div>
+									<div class="color-info">
+										<p>
+											Science <br/>
+											#0066CC <br/>
+											rgba(0, 102, 204, 1) <br/>
+										</p>
+									</div>
+								</li>
+								<li>
+									<div class="color-box dodger">
+									</div>
+									<div class="color-info">
+										<p>
+											Dodger <br/>
+											#3F95F8 <br/>
+											rgba(63, 149, 248, 1) <br/>
+										</p>
+									</div>
+								</li>
+								<li>
+									<div class="color-box edwin">
+									</div>
+									<div class="color-info">
+										<p>
+											Edwin Blue <br/>
+											#009AFF <br/>
+											rgba(0, 154, 255, 1) <br/>
+										</p>
+									</div>
+								</li>
+								<li>
+									<div class="color-box deep-sky">
+									</div>
+									<div class="color-info">
+										<p>
+											Deep Sky <br/>
+											#00B7FF <br/>
+											rgba(0, 183, 255, 1) <br/>
+										</p>
+									</div>
+								</li>
+							</ul>
+							<ul class="color-list">
+								<h5>Secondary Colors - Warnings & Alerts</h5>
+								<li>
+									<div class="color-box dark-candy-apple">
+									</div>
+									<div class="color-info">
+										<p>
+											Dark Candy Apple <br/>
+											#A90000 <br/>
+											rgba(169, 0, 0, 1) <br/>
+										</p>
+									</div>
+								</li>
+								<li>
+									<div class="color-box persian">
+									</div>
+									<div class="color-info">
+										<p>
+											Persian <br/>
+											#CE392B <br/>
+											rgba(206, 57, 53, 1) <br/>
+										</p>
+									</div>
+								</li>
+								<li>
+									<div class="color-box flamingo">
+									</div>
+									<div class="color-info">
+										<p>
+											Flamingo <br/>
+											#F35A3E <br/>
+											rgba(243, 90, 62, 1) <br/>
+										</p>
+									</div>
+								</li>
+								<li>
+									<div class="color-box bittersweet">
+									</div>
+									<div class="color-info">
+										<p>
+											Bittersweet <br/>
+											#FF755F <br/>
+											rgba(255, 117, 95, 1) <br/>
+										</p>
+									</div>
+								</li>
+								<li>
+									<div class="color-box dark-salmon">
+									</div>
+									<div class="color-info">
+										<p>
+											Dark Salmon <br/>
+											#F1917E <br/>
+											rgba(241, 145, 126, 1) <br/>
+										</p>
+									</div>
+								</li>
+								<li>
+									<div class="color-box blue-lagoon">
+									</div>
+									<div class="color-info">
+										<p>
+											Blue Lagoon <br/>
+											#028090 <br/>
+											rgba(2, 128, 144, 1) <br/>
+										</p>
+									</div>
+								</li>
+								<li>
+									<div class="color-box medium-aqua">
+									</div>
+									<div class="color-info">
+										<p>
+											Medium Aqua <br/>
+											#69C1AE <br/>
+											rgba(105, 193, 174, 1) <br/>
+										</p>
+									</div>
+								</li>
+							</ul>
+							<ul class="color-list">
+								<h5>Accent Colors</h5>
+								<li>
+									<div class="color-box mantis">
+									</div>
+									<div class="color-info">
+										<p>
+											Mantis <br/>
+											#7AC558 <br/>
+											rgba(122, 197, 88, 1) <br/>
+										</p>
+									</div>
+								</li>
+								<li>
+									<div class="color-box yellow-green">
+									</div>
+									<div class="color-info">
+										<p>
+											Yellow Green <br/>
+											#CEDC78 <br/>
+											rgba(206, 220, 120, 1) <br/>
+										</p>
+									</div>
+								</li>
+								<li>
+									<div class="color-box rob-roy">
+									</div>
+									<div class="color-info">
+										<p>
+											Rob Roy  <br/>
+											#F2BD74 <br/>
+											rgba(242, 189, 116, 1) <br/>
+										</p>
+									</div>
+								</li>
+								<li>
+									<div class="color-box apricot">
+									</div>
+									<div class="color-info">
+										<p>
+											Apricot  <br/>
+											#F1917E <br/>
+											rgba(242, 189, 116, 1) <br/>
+										</p>
+									</div>
+								</li>
+								<li>
+									<div class="color-box morning-glory">
+									</div>
+									<div class="color-info">
+										<p>
+											Morning Glory  <br/>
+											#98D4E0 <br/>
+											rgba(242, 189, 116, 1) <br/>
+										</p>
+									</div>
+								</li>
+							</ul>
+							<ul class="color-list">
+								<h5>Neutrals</h5>
+								<li>
+									<div class="color-box black-rock">
+									</div>
+									<div class="color-info">
+										<p>
+											Black Rock <br/>
+											#2A303C <br/>
+											rgba(42, 48, 60, 1) <br/>
+										</p>
+									</div>
+								</li>
+								<li>
+									<div class="color-box licorice">
+									</div>
+									<div class="color-info">
+										<p>
+											Licorice <br/>
+											#323949 <br/>
+											rgba(50, 57, 73, 1) <br/>
+										</p>
+									</div>
+								</li>
+								<li>
+									<div class="color-box gun-powder">
+									</div>
+									<div class="color-info">
+										<p>
+											Gun Powder<br/>
+											#3F475A<br/>
+											rgba(63, 71, 90, 1)<br/>
+										</p>
+									</div>
+								</li>
+								<li>
+									<div class="color-box slate">
+									</div>
+									<div class="color-info">
+										<p>
+											Slate  <br/>
+											#708096 <br/>
+											rgba(112, 128, 159, 1) <br/>
+										</p>
+									</div>
+								</li>
+								<li>
+									<div class="color-box silver">
+									</div>
+									<div class="color-info">
+										<p>
+											Silver  <br/>
+											#A9B2BD <br/>
+											rgba(178, 189, 204, 1) <br/>
+										</p>
+									</div>
+								</li>
+								<li>
+									<div class="color-box link-water">
+									</div>
+									<div class="color-info">
+										<p>
+											Link Water  <br/>
+											#CBD0D8 <br/>
+											rgba(203, 208, 216, 1) <br/>
+										</p>
+									</div>
+								</li>
+								<li>
+									<div class="color-box dark-grey">
+									</div>
+									<div class="color-info">
+										<p>
+											Dark Grey  <br/>
+											#545454 <br/>
+											rgba(251, 251, 251, 1) <br/>
+										</p>
+									</div>
+								</li>
+								<li>
+									<div class="color-box dove">
+									</div>
+									<div class="color-info">
+										<p>
+											Dove  <br/>
+											#767676 <br/>
+											rgba(118, 118, 118, 1) <br/>
+										</p>
+									</div>
+								</li>
+								<li>
+									<div class="color-box stack">
+									</div>
+									<div class="color-info">
+										<p>
+											Stack  <br/>
+											#8F8F8F <br/>
+											rgba(143, 143, 143, 1) <br/>
+										</p>
+									</div>
+								</li>
+								<li>
+									<div class="color-box athens">
+									</div>
+									<div class="color-info">
+										<p>
+											Athens  <br/>
+											#EDEFF2 <br/>
+											rgba(237, 239, 242, 1) <br/>
+										</p>
+									</div>
+								</li>
+								<li>
+									<div class="color-box haze">
+									</div>
+									<div class="color-info">
+										<p>
+											Haze  <br/>
+											#F4F6F8 <br/>
+											rgba(244, 246, 248, 1) <br/>
+										</p>
+									</div>
+								</li>
+								<li>
+									<div class="color-box alabaster">
+									</div>
+									<div class="color-info">
+										<p>
+											Alabaster  <br/>
+											#FBFBFB <br/>
+											rgba(251, 251, 251, 1) <br/>
+										</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- Header -->
+					<div class="panel" id="header">
+						<div class="panel-heading">
+							<h1>Header / Navigation</h1>
+						</div>
+						<div class="panel-body">
+							<header>
+								<div class="brand">
+									<div class="welcome">
+										Welcome,
+										<a href="#">Daniel</a>
+									</div>
+									<div class="logo"><a href="#"><i class="logo-eqx-icon"></i></a></div>
+									<div class="title-wrap">
+										<div class="title">Equinix <span class="grey-text">Customer Portal</span></div>
+									</div>
+								</div>
+							</header>
+						</div>
+						<div class="panel-footer">
+							<div class="toggle-codesnippet">
+								<a data-text-original="Show Code Snippet" class="header-toggle-btn" data-text-swap="Hide Code Snippet" onclick=toggleSnippet('header-code-snippet') id="header-code-snippet">Show Code Snippet</a>
+								<div class="header-code-snippet code-snippet">
+									<script type="text/plain" class="language-markup">
+										<header>
+											<div class="brand">
+												<div class="welcome pull-right">
+													Welcome,
+													<a href="#">Daniel</a>
+												</div>
+												<div class="logo"><a href="#"><i class="logo-eqx-icon"></i></a></div>
+												<div class="title-wrap">
+													<div class="title">Equinix <span class="grey-text">Customer Portal</span></div>
+												</div>
+											</div>
+										</header>
+									</script>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- typography -->
+					<div class="panel" id="">
+						<span class="anchor" id="typography"></span>
+						<div class="panel-heading">
+							<h1>Typography / Headings</h1>
+						</div>
+						<div class="panel-body">
+							<h1>h1. The quick brown fox jumps over the lazy doge.</h1>
+							<br/>
+							<h2>h2. The quick brown fox jumps over the lazy doge.</h2>
+							<br/>
+							<h3>h3. The quick brown fox jumps over the lazy doge.</h3>
+							<br/>
+							<h4>h4. The quick brown fox jumps over the lazy doge.</h4>
+							<br/>
+							<h5>h5. The quick brown fox jumps over the lazy doge.</h5>
+							<br/>
+							<h6>h6. The quick brown fox jumps over the lazy doge.</h6>
+							<br/>
+						</div>
+						<div class="panel-footer">
+							<div class="toggle-codesnippet">
+								<a data-text-original="Show Code Snippet" data-text-swap="Hide Code Snippet" onclick=toggleSnippet('typography-code-snippet') id="typography-code-snippet">Show Code Snippet</a>
+								<div class="typography-code-snippet code-snippet">
+									<script type="text/plain" class="language-markup">
+										<h1>h1. Equinix heading</h1>
+										<h2>h2. Equinix heading</h2>
+										<h3>h3. Equinix heading</h3>
+										<h4>h4. Equinix heading</h4>
+										<h5>h5. Equinix heading</h5>
+										<h6>h6. Equinix heading</h6>
+									</script>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- page structure -->
+					<!-- <div class="panel">
+						<div class="panel-heading" id="page">
+							<h1>Page</h1>
+						</div>
+						<div class="panel-body">
+							<div class="page">
+								<div class="page-header">
+									Page Header
+								</div>
+								<div class="panel-content">
+									Page Content
+								</div>
+							</div>
+						</div>
+
+						<div class="panel-footer">
+							<div class="toggle-codesnippet">
+								<a data-text-original="Show Code Snippet" data-text-swap="Hide Code Snippet" onclick=toggleSnippet('page-code-snippet') id="page-code-snippet">Show Code Snippet</a>
+								<div class="page-code-snippet code-snippet">
+									<script type="text/plain" class="language-markup">
+										<div class="page">
+											<div class="page-header">
+												Page Header
+											</div>
+											<div class="panel-content">
+												Page Content
+											</div>
+										</div>
+									</script>
+								</div>
+							</div>
+						</div>
+					</div> -->
+
+					<!-- panel structure -->
+					<!-- <div class="panel" id="panel">
+						<div class="panel-heading">
+							<h1>Panel</h1>
+						</div>
+						<div class="panel-body">
+							<p>Panel Contain Panel Heading, Panel body and Panel footer.</p>
+								<div class="panel">
+									<div class="panel-heading">
+										Panel Heading
+									</div>
+									<div class="panel-body">
+										Panel Body
+									</div>
+									<div class="panel-footer">
+										Panel Footer
+									</div>
+								</div>
+						</div>
+
+						<div class="panel-footer">
+							<div class="toggle-codesnippet">
+								<a data-text-original="Show Code Snippet" data-text-swap="Hide Code Snippet" onclick=toggleSnippet('panel-code-snippet') id="panel-code-snippet">Show Code Snippet</a>
+								<div class="panel-code-snippet code-snippet">
+									<script type="text/plain" class="language-markup">
+										<div class="panel">
+											<div class="panel-heading">
+												Panel Heading
+											</div>
+											<div class="panel-body">
+												Panel Body
+											</div>
+											<div class="panel-footer">
+												Panel Footer
+											</div>
+										</div>
+									</script>
+								</div>
+							</div>
+						</div>
+					</div> -->
+
+					<!-- Links -->
+					<div class="panel" id="link">
+						<div class="panel-heading">
+							<h1>Links</h1>
+						</div>
+						<div class="panel-body">
+								<ul>
+									<li class="bottomm">
+										<a href="#Link1">Base Link</a>
+									</li>
+									<li class="bottomm">
+										<a href="#Link2">Link with an icon after <i class="angle-double-right-eqx-icon after"></i></a>
+									</li>
+									<li class="bottomm">
+										<a href="#Link3"><i class="file-pdf-o-eqx-icon before"></i> Link with an icon before </a>
+									</li>
+								</ul>
+						</div>
+
+						<div class="panel-footer">
+							<div class="toggle-codesnippet">
+								<a data-text-original="Show Code Snippet" data-text-swap="Hide Code Snippet" onclick=toggleSnippet('link-code-snippet') id="link-code-snippet">Show Code Snippet</a>
+								<div class="link-code-snippet code-snippet">
+									<script type="text/plain" class="language-markup">
+										<a href="#Link1">Base Link</a>
+										<a href="#Link2">Link with an icon after <i class="angle-double-right-eqx-icon after"></i></a>
+										<a href="#Link3"><i class="file-pdf-o-eqx-icon before"></i> Link with an icon before </a>
+									</script>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Buttons Default-->
+					<div class="panel" id="button-default">
+						<div class="panel-heading">
+							<h1>Buttons Default</h1>
+						</div>
+						<div class="panel-body">
+							<button class="eqx-btn eqx-btn-primary" type="submit">Primary</button>
+							<button class="eqx-btn eqx-btn-basic" type="submit">Default</button>
+							<button class="eqx-btn eqx-btn-danger" type="submit">Danger</button>
+							<button class="eqx-btn eqx-btn-disabled">Disabled</button>
+						</div>
+
+						<div class="panel-footer">
+							<div class="toggle-codesnippet">
+								<a data-text-original="Show Code Snippet" data-text-swap="Hide Code Snippet" onclick=toggleSnippet('buttons-code-snippet') id="buttons-code-snippet">Show Code Snippet</a>
+								<div class="buttons-code-snippet code-snippet">
+									<script type="text/plain" class="language-markup">
+										<button class="eqx-btn eqx-btn-primary" type="submit">Primary</button>
+										<button class="eqx-btn eqx-btn-basic" type="submit">Default</button>
+										<button class="eqx-btn eqx-btn-danger" type="submit">Danger</button>
+										<button class="eqx-btn eqx-btn-disabled">Disabled</button>
+									</script>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Buttons Sizes-->
+					<div class="panel" id="button-sizes">
+						<div class="panel-heading">
+							<h1>Button Size</h1>
+						</div>
+						<div class="panel-body">
+							<div class="topm">
+								<h3 class="bottomm">Primary</h3>
+								<button class="eqx-btn eqx-btn-primary eqx-btn-lg" type="button">Button Large</button>
+								<button class="eqx-btn eqx-btn-primary" type="button">Button Default</button>
+								<button class="eqx-btn eqx-btn-primary eqx-btn-sm" type="button">Button Small</button>
+							</div>
+
+							<div class="topm">
+								<h3 class="bottomm">Basic</h3>
+								<button class="eqx-btn eqx-btn-lg eqx-btn-basic" type="button">Button Large</button>
+								<button class="eqx-btn eqx-btn-basic" type="button">Button Default</button>
+								<button class="eqx-btn eqx-btn-sm eqx-btn-basic" type="button">Button Small</button>
+							</div>
+
+							<div class="topm">
+								<h3 class="bottomm">Disabled</h3>
+								<button class="eqx-btn eqx-btn-lg eqx-btn-disabled" type="button">Button Large</button>
+								<button class="eqx-btn eqx-btn-disabled" type="button">Button Default</button>
+								<button class="eqx-btn eqx-btn-sm eqx-btn-disabled" type="button">Button Small</button>
+							</div>
+
+							<div class="topm">
+								<h3 class="bottomm">Distructive</h3>
+								<button class="eqx-btn eqx-btn-lg eqx-btn-danger" type="button">Button Large</button>
+								<button class="eqx-btn eqx-btn-danger" type="button">Button Default</button>
+								<button class="eqx-btn eqx-btn-sm eqx-btn-danger" type="button">Button Small</button>
+							</div>
+						</div>
+
+						<div class="panel-footer">
+							<div class="toggle-codesnippet">
+								<a data-text-original="Show Code Snippet" data-text-swap="Hide Code Snippet" onclick=toggleSnippet('button-size-code-snippet') id="button-size-code-snippet">Show Code Snippet</a>
+								<div class="button-size-code-snippet code-snippet">
+									<script type="text/plain" class="language-markup">
+										<h3>Primary</h3>
+										<button class="eqx-btn eqx-btn-lg" type="button">Button Large</button>
+										<button class="eqx-btn eqx-btn-default" type="button">Button Default</button>
+										<button class="eqx-btn eqx-btn-sm" type="button">Button Small</button>
+
+										<h3>Basic</h3>
+										<button class="eqx-btn eqx-btn-lg eqx-btn-basic" type="button">Button Large</button>
+										<button class="eqx-btn eqx-btn-basic" type="button">Button Default</button>
+										<button class="eqx-btn eqx-btn-sm eqx-btn-basic" type="button">Button Small</button>
+
+										<h3>Disabled</h3>
+										<button class="eqx-btn eqx-btn-lg eqx-btn-disabled" type="button">Button Large</button>
+										<button class="eqx-btn eqx-btn-disabled" type="button">Button Default</button>
+										<button class="eqx-btn eqx-btn-sm eqx-btn-disabled" type="button">Button Small</button>
+
+										<h3>Distructive</h3>
+										<button class="eqx-btn eqx-btn-lg eqx-btn-danger" type="button">Button Large</button>
+										<button class="eqx-btn eqx-btn-danger" type="button">Button Default</button>
+										<button class="eqx-btn eqx-btn-sm eqx-btn-danger" type="button">Button Small</button>
+									</script>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Buttons Fluid-->
+					<div class="panel" id="button-fluid">
+						<div class="panel-heading">
+							<h1>Button Fluid</h1>
+						</div>
+						<div class="panel-body">
+							<button class="eqx-btn eqx-btn-primary eqx-btn-fluid" type="button">Primary Button Fluid</button>
+							<button class="eqx-btn eqx-btn-basic eqx-btn-fluid topm" type="button">Basic Button Fluid</button>
+						</div>
+
+						<div class="panel-footer">
+							<div class="toggle-codesnippet">
+								<a data-text-original="Show Code Snippet" data-text-swap="Hide Code Snippet" onclick=toggleSnippet('button-fluid-code-snippet') id="button-fluid-code-snippet">Show Code Snippet</a>
+								<div class="button-fluid-code-snippet code-snippet">
+								<script type="text/plain" class="language-markup">
+									<button class="eqx-btn eqx-btn-primary eqx-btn-fluid" type="button">Primary Fluid</button>
+									<button class="eqx-btn eqx-btn-basic eqx-btn-fluid" type="button">Basic Fluid</button>
+								</script>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Button Group-->
+					<div class="panel" id="button-group">
+						<div class="panel-heading">
+							<h1>Button Group</h1>
+						</div>
+						<div class="panel-body">
+							<h3>Primary Button Group</h3>
+							<div class="eqx-btn-group topm bottomm">
+								<button type="button" class="eqx-btn eqx-btn-primary">Left</button>
+								<button type="button" class="eqx-btn eqx-btn-primary">Middle1</button>
+								<button type="button" class="eqx-btn eqx-btn-primary">Middle2</button>
+								<button type="button" class="eqx-btn eqx-btn-primary active">Middle3</button>
+								<button type="button" class="eqx-btn eqx-btn-primary">Right</button>
+							</div>
+							<h3>Basic Button Group</h3>
+							<div class="eqx-btn-group topm">
+								<button type="button" class="eqx-btn eqx-btn-basic">Left</button>
+								<button type="button" class="eqx-btn eqx-btn-basic">Middle1</button>
+								<button type="button" class="eqx-btn eqx-btn-basic">Middle2</button>
+								<button type="button" class="eqx-btn eqx-btn-basic active">Middle3</button>
+								<button type="button" class="eqx-btn eqx-btn-basic">Right</button>
+							</div>
+						</div>
+
+						<div class="panel-footer">
+							<div class="toggle-codesnippet">
+								<a data-text-original="Show Code Snippet" data-text-swap="Hide Code Snippet" onclick=toggleSnippet('button-group-code-snippet') id="button-group-code-snippet">Show Code Snippet</a>
+								<div class="button-group-code-snippet code-snippet">
+									<script type="text/plain" class="language-markup">
+										<div class="eqx-btn-group">
+											<button type="button" class="eqx-btn eqx-btn-primary">Left</button>
+											<button type="button" class="eqx-btn eqx-btn-primary">Middle1</button>
+											<button type="button" class="eqx-btn eqx-btn-primary">Middle2</button>
+											<button type="button" class="eqx-btn eqx-btn-primary active">Middle3</button>
+											<button type="button" class="eqx-btn eqx-btn-primary">Right</button>
+										</div>
+										<div class="eqx-btn-group">
+											<button type="button" class="eqx-btn eqx-btn-basic">Left</button>
+											<button type="button" class="eqx-btn eqx-btn-basic">Middle1</button>
+											<button type="button" class="eqx-btn eqx-btn-basic">Middle2</button>
+											<button type="button" class="eqx-btn eqx-btn-basic active">Middle3</button>
+											<button type="button" class="eqx-btn eqx-btn-basic">Right</button>
+										</div>
+									</script>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Button Number-->
+					<div class="panel" id="button-group-number">
+						<div class="panel-heading">
+							<h1>Button Number</h1>
+						</div>
+						<div class="panel-body">
+							<h3>Primary Number Button Group</h3>
+							<div class="eqx-btn-group topm bottomm">
+								<button type="button" class="eqx-btn eqx-btn-primary">1</button>
+								<button type="button" class="eqx-btn eqx-btn-primary">2</button>
+								<button type="button" class="eqx-btn eqx-btn-primary active">3</button>
+								<button type="button" class="eqx-btn eqx-btn-primary">4</button>
+								<button type="button" class="eqx-btn eqx-btn-primary">5</button>
+							</div>
+							<h3>Basic Number Button Group</h3>
+							<div class="eqx-btn-group topm">
+								<button type="button" class="eqx-btn eqx-btn-basic">1</button>
+								<button type="button" class="eqx-btn eqx-btn-basic">2</button>
+								<button type="button" class="eqx-btn eqx-btn-basic active">3</button>
+								<button type="button" class="eqx-btn eqx-btn-basic">4</button>
+								<button type="button" class="eqx-btn eqx-btn-basic">5</button>
+							</div>
+						</div>
+
+						<div class="panel-footer">
+							<div class="toggle-codesnippet">
+								<a data-text-original="Show Code Snippet" data-text-swap="Hide Code Snippet" onclick=toggleSnippet('button-group-num-code-snippet') id="button-group-num-code-snippet">Show Code Snippet</a>
+								<div class="button-group-num-code-snippet code-snippet">
+									<script type="text/plain" class="language-markup">
+										<div class="eqx-btn-group">
+											<button type="button" class="eqx-btn eqx-btn-primary">1</button>
+											<button type="button" class="eqx-btn eqx-btn-primary">2</button>
+											<button type="button" class="eqx-btn eqx-btn-primary">3</button>
+											<button type="button" class="eqx-btn eqx-btn-primary">4</button>
+											<button type="button" class="eqx-btn eqx-btn-primary">5</button>
+										</div>
+										<div class="eqx-btn-group">
+											<button type="button" class="eqx-btn eqx-btn-basic">1</button>
+											<button type="button" class="eqx-btn eqx-btn-basic">2</button>
+											<button type="button" class="eqx-btn eqx-btn-basic active">3</button>
+											<button type="button" class="eqx-btn eqx-btn-basic">4</button>
+											<button type="button" class="eqx-btn eqx-btn-basic">5</button>
+										</div>
+									</script>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Button Group Vertical-->
+					<div class="panel" id="button-group-vertical">
+						<div class="panel-heading">
+							<h1>Button Group Vertical</h1>
+						</div>
+						<div class="panel-body">
+							<h3>Primary Button Group Vertical</h3>
+							<div class="eqx-btn-group-vertical topm bottomm">
+								<button type="button" class="eqx-btn eqx-btn-primary active">One</button>
+								<button type="button" class="eqx-btn eqx-btn-primary">Two</button>
+								<button type="button" class="eqx-btn eqx-btn-primary">Three</button>
+								<button type="button" class="eqx-btn eqx-btn-primary" >Four</button>
+								<button type="button" class="eqx-btn eqx-btn-primary">Five</button>
+							</div>
+							<h3>Basic Button Group Vertical</h3>
+							<div class="eqx-btn-group-vertical topm">
+								<button type="button" class="eqx-btn eqx-btn-basic active">One</button>
+								<button type="button" class="eqx-btn eqx-btn-basic">Two</button>
+								<button type="button" class="eqx-btn eqx-btn-basic">Three</button>
+								<button type="button" class="eqx-btn eqx-btn-basic">Four</button>
+								<button type="button" class="eqx-btn eqx-btn-basic">Five</button>
+							</div>
+						</div>
+
+						<div class="panel-footer">
+							<div class="toggle-codesnippet">
+								<a data-text-original="Show Code Snippet" data-text-swap="Hide Code Snippet" onclick=toggleSnippet('button-group-vertical-code-snippet') id="button-group-vertical-code-snippet">Show Code Snippet</a>
+								<div class="button-group-vertical-code-snippet code-snippet">
+									<script type="text/plain" class="language-markup">
+										<div class="eqx-btn-group-vertical">
+											<button type="button" class="eqx-btn eqx-btn-primary active">One</button>
+											<button type="button" class="eqx-btn eqx-btn-primary">Two</button>
+											<button type="button" class="eqx-btn eqx-btn-primary">Three</button>
+											<button type="button" class="eqx-btn eqx-btn-primary">Four</button>
+											<button type="button" class="eqx-btn eqx-btn-primary">Five</button>
+										</div>
+									</script>
+									</div>
+								</div>
+						</div>
+					</div>
+
+					<!-- Froms & Inputs-->
+					<div class="panel" id="forms">
+						<div class="panel-heading">
+							<h1>Froms & Inputs</h1>
+						</div>
+						<div class="panel-body">
+								<form>
+									<div class="form-group">
+										<label class="form-label">Email</label>
+										<input type="email" class="form-element" placeholder="Email">
+									</div>
+
+									<div class="form-group top">
+										<label class="form-label">Name (Input with hint text)</label>
+										<input type="text" class="form-element" placeholder="Name">
+										<div class="hint-text">
+											<p>
+												No Alphanumeric value
+											</p>
+										</div>
+									</div>
+
+									<div class="form-group top">
+										<label class="form-label">Name (Input with hint text)</label>
+										<input type="text" class="form-element" placeholder="Name">
+										<div class="hint-text success-hint-text">
+											<p>
+												This is a success validation text
+											</p>
+										</div>
+									</div>
+
+									<div class="form-group top">
+										<label class="form-label">Name (Input with hint text)</label>
+										<input type="text" class="form-element" placeholder="Name">
+										<div class="hint-text warning-hint-text">
+											<p>
+												This is a warning validation text
+											</p>
+										</div>
+									</div>
+
+									<div class="form-group top">
+										<label class="form-label">Name (Input with hint text)</label>
+										<input type="text" class="form-element" placeholder="Name">
+										<div class="hint-text danger-hint-text">
+											<p>
+												This is a danger validation text
+											</p>
+										</div>
+									</div>
+
+									<div class="form-group top dropdown-select bottomm">
+										<label class="form-label">Select Dropdown</label>
+										<div class="box top">
+											<select id="dropdownSelector">
+												<option value="banana">Bananas</option>
+												<option value="apples">Apples</option>
+												<option value="cherries" disabled>Cherries</option>
+												<option value="grapes">Grapes</option>
+											</select>
+										</div>
+									</div>
+
+									<!-- <div class="form-label top file-upload bottomm">
+										<label class="form-label">File Upload</label>
+										<div class="drag-file-container">
+											<input type="file" multiple>
+											<div class="drag-file-text">
+												<p>Drop files here.</p><br />
+												<p>or</p>
+											</div>
+										</div>
+										<button type="submit">Select Files</button>
+									</div> -->
+
+									<label class="form-label">Please Select One</label>
+									<div class="topm">
+										<label class="radio-container">One
+											<input type="radio" checked="checked" name="radio">
+											<span class="radio-check"></span>
+										</label>
+										<label class="radio-container">Two
+											<input type="radio" name="radio">
+											<span class="radio-check"></span>
+										</label>
+										<label class="radio-container">Three
+											<input type="radio" name="radio">
+											<span class="radio-check"></span>
+										</label>
+										<label class="radio-container">Four
+											<input type="radio" name="radio">
+											<span class="radio-check"></span>
+										</label>
+									</div>
+
+									<div class="form-group top">
+										<label>Text Area</label>
+										<textarea class="form-element topm" placeholder="Hint text goes here" rows="4"></textarea>
+									</div>
+
+									<label class="form-label">Terms & Conditions</label>
+									<div class="topm">
+										<label class="checkbox-container">One
+											<input type="checkbox" checked="checked" name="checkbox">
+											<span class="checkbox-check"></span>
+										</label>
+										<label class="checkbox-container">Two
+											<input type="checkbox" name="checkbox">
+											<span class="checkbox-check"></span>
+										</label>
+										<label class="checkbox-container">Three
+											<input type="checkbox" name="checkbox">
+											<span class="checkbox-check"></span>
+										</label>
+									</div>
+
+									<input class="eqx-btn eqx-btn-primary" type="submit" value="Submit">
+								</form>
+						</div>
+
+						<div class="panel-footer">
+							<div class="toggle-codesnippet">
+								<a data-text-original="Show Code Snippet" data-text-swap="Hide Code Snippet" onclick=toggleSnippet('form-code-snippet') id="form-code-snippet">Show Code Snippet</a>
+								<div class="form-code-snippet code-snippet">
+									<script type="text/plain" class="language-markup">
+										<form>
+											<div class="form-group">
+												<label class="form-label">Email</label>
+												<input type="email" class="form-element" placeholder="Email">
+											</div>
+
+											<div class="form-group top">
+												<label class="form-label">Name (Input with hint text)</label>
+												<input type="text" class="form-element" placeholder="Name">
+												<div class="hint-text">
+													<p>
+														No Alphanumeric value
+													</p>
+												</div>
+											</div>
+
+											<div class="form-group top">
+												<label class="form-label">Name (Input with hint text)</label>
+												<input type="text" class="form-element" placeholder="Name">
+												<div class="hint-text success-hint-text">
+													<p>
+														This is a success validation text
+													</p>
+												</div>
+											</div>
+
+											<div class="form-group top">
+												<label class="form-label">Name (Input with hint text)</label>
+												<input type="text" class="form-element" placeholder="Name">
+												<div class="hint-text warning-hint-text">
+													<p>
+														This is a warning validation text
+													</p>
+												</div>
+											</div>
+
+											<div class="form-group top">
+												<label class="form-label">Name (Input with hint text)</label>
+												<input type="text" class="form-element" placeholder="Name">
+												<div class="hint-text danger-hint-text">
+													<p>
+														This is a danger validation text
+													</p>
+												</div>
+											</div>
+
+											<div class="form-group top dropdown-select bottomm">
+												<label class="form-label">Select Dropdown</label>
+												<div class="box top">
+													<select id="dropdownSelector">
+														<option value="banana">Bananas</option>
+														<option value="apples">Apples</option>
+														<option value="cherries" disabled>Cherries</option>
+														<option value="grapes">Grapes</option>
+													</select>
+												</div>
+											</div>
+
+											<div class="form-label top file-upload bottomm">
+												<label class="form-label">File Upload</label>
+												<div class="drag-file-container">
+													<input type="file" multiple>
+													<div class="drag-file-text">
+														<p>Drop files here.</p><br />
+														<p>or</p>
+													</div>
+												</div>
+												<button type="submit">Select Files</button>
+											</div>
+
+											<label class="form-label">Please Select One</label>
+											<div class="topm">
+												<label class="radio-container">One
+													<input type="radio" checked="checked" name="radio">
+													<span class="radio-check"></span>
+												</label>
+												<label class="radio-container">Two
+													<input type="radio" name="radio">
+													<span class="radio-check"></span>
+												</label>
+												<label class="radio-container">Three
+													<input type="radio" name="radio">
+													<span class="radio-check"></span>
+												</label>
+												<label class="radio-container">Four
+													<input type="radio" name="radio">
+													<span class="radio-check"></span>
+												</label>
+											</div>
+
+											<div class="form-group top">
+												<label>Text Area</label>
+												<textarea class="form-element topm" placeholder="Hint text goes here" rows="4"></textarea>
+											</div>
+
+											<label class="form-label">Terms & Conditions</label>
+											<div class="topm">
+												<label class="checkbox-container">One
+													<input type="checkbox" checked="checked" name="checkbox">
+													<span class="checkbox-check"></span>
+												</label>
+												<label class="checkbox-container">Two
+													<input type="checkbox" name="checkbox">
+													<span class="checkbox-check"></span>
+												</label>
+												<label class="checkbox-container">Three
+													<input type="checkbox" name="checkbox">
+													<span class="checkbox-check"></span>
+												</label>
+											</div>
+
+											<input class="eqx-btn eqx-btn-primary" type="submit" value="Submit">
+										</form>
+									</script>
+									</div>
+								</div>
+						</div>
+					</div>
+
+					<!-- Inline Input, Radio and Checkbox-->
+					<!-- <div class="panel" id="inlineElements">
+						<div class="panel-heading">
+							<h1>Inline Inputs, Radios and Checkboxes</h1>
+						</div>
+						<div class="panel-body">
+								<div class="form-group row">
+									<div class="col-3">
+										<label class="form-label">First Name</label>
+										<input type="text" class="form-element" placeholder="First Name">
+									</div>
+
+									<div class="col-3">
+										<label class="form-label">Last Name</label>
+										<input type="text" class="form-element" placeholder="Last Name">
+									</div>
+								</div>
+
+								<div class="form-group">
+									<h6 class="form-label">Inline Checkbox</h6>
+									<div class="eqx-checkbox eqx-checkbox-inline">
+										<input type="checkbox" name="checkboxinline" id="checkboxinline1" value="1">
+										<label for="checkboxinline1">
+											<span class="checkbox">1</span>
+										</label>
+									</div>
+									<div class="eqx-checkbox eqx-checkbox-inline">
+										<input type="checkbox" name="checkboxinline" id="checkboxinline2" value="2">
+										<label for="checkboxinline2">
+											<span class="checkbox">2</span>
+										</label>
+									</div>
+									<div class="eqx-checkbox eqx-checkbox-inline">
+										<input type="checkbox" name="checkboxinline" id="checkboxinline3" value="3">
+										<label for="checkboxinline3">
+											<span class="checkbox">3</span>
+										</label>
+									</div>
+								</div>
+
+								<div class="form-group">
+									<h6 class="form-label">Inline Radio</h6>
+									<div class="eqx-radio eqx-radio-inline">
+										<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="y">
+										<label for="inlineRadio1">
+											<span class="radio">Yes</span>
+										</label>
+									</div>
+									<div class="eqx-radio eqx-radio-inline">
+										<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="n">
+										<label for="inlineRadio2">
+											<span class="radio">No</span>
+										</label>
+									</div>
+									<div class="eqx-radio eqx-radio-inline">
+										<input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="ns">
+										<label for="inlineRadio3">
+											<span class="radio">Not Sure</span>
+										</label>
+									</div>
+								</div>
+
+								<input class="eqx-btn eqx-btn-primary" type="submit" value="Submit">
+						</div>
+
+						<div class="panel-footer">
+							<div class="toggle-codesnippet">
+								<a data-text-original="Show Code Snippet" data-text-swap="Hide Code Snippet" onclick=toggleSnippet('form-inline-code-snippet') id="form-inline-code-snippet">Show Code Snippet</a>
+								<div class="form-inline-code-snippet code-snippet">
+								<script type="text/plain" class="language-markup">
+									<div class="form-group row">
+										<div class="col-3">
+											<label class="form-label">First Name</label>
+											<input type="text" class="form-element" placeholder="First Name">
+										</div>
+
+										<div class="col-3">
+											<label class="form-label">Last Name</label>
+											<input type="text" class="form-element" placeholder="Last Name">
+										</div>
+									</div>
+
+									<div class="form-group">
+										<h6 class="form-label">Inline Checkbox</h6>
+										<div class="eqx-checkbox eqx-checkbox-inline">
+											<input type="checkbox" name="checkboxinline" id="checkboxinline1" value="1">
+											<label for="checkboxinline1">
+												<span class="checkbox">1</span>
+											</label>
+										</div>
+										<div class="eqx-checkbox eqx-checkbox-inline">
+											<input type="checkbox" name="checkboxinline" id="checkboxinline2" value="2">
+											<label for="checkboxinline2">
+												<span class="checkbox">2</span>
+											</label>
+										</div>
+										<div class="eqx-checkbox eqx-checkbox-inline">
+											<input type="checkbox" name="checkboxinline" id="checkboxinline3" value="3">
+											<label for="checkboxinline3">
+												<span class="checkbox">3</span>
+											</label>
+										</div>
+									</div>
+
+									<div class="form-group">
+										<h6 class="form-label">Inline Radio</h6>
+										<div class="eqx-radio eqx-radio-inline">
+											<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="y">
+											<label for="inlineRadio1">
+												<span class="radio">Yes</span>
+											</label>
+										</div>
+										<div class="eqx-radio eqx-radio-inline">
+											<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="n">
+											<label for="inlineRadio2">
+												<span class="radio">No</span>
+											</label>
+										</div>
+										<div class="eqx-radio eqx-radio-inline">
+											<input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="ns">
+											<label for="inlineRadio3">
+												<span class="radio">Not Sure</span>
+											</label>
+										</div>
+									</div>
+
+									<input class="eqx-btn eqx-btn-primary" type="submit" value="Submit">
+								</script>
+								</div>
+							</div>
+						</div>
+					</div> -->
+
+					<!-- Disabled Elements-->
+					<!-- <div class="panel" id="disabledElement">
+						<div class="panel-heading">
+							<h1>Disabled Element</h1>
+						</div>
+						<div class="panel-body">
+							<code>
+								<div class="form-group">
+									<label class="form-label">Email (Disabled Input)</label>
+									<input type="email" class="form-element" placeholder="Email" disabled>
+									<div class="disabled-text">
+										<ul>
+											<li>Disabled Text Hint</li>
+										</ul>
+									</div>
+								</div>
+
+								<div class="form-group">
+									<h6 class="form-label">Disabled Checkbox</h6>
+									<div class="eqx-checkbox eqx-checkbox-inline">
+										<input type="checkbox" name="checkboxinline" id="checkboxdisabled1" value="1" checked
+											   disabled>
+										<label for="checkboxdisabled1">
+											<span class="checkbox">1</span>
+										</label>
+									</div>
+
+									<div class="eqx-checkbox eqx-checkbox-inline">
+										<input type="checkbox" name="checkboxinline" id="checkboxdisabled2" value="2" disabled>
+										<label for="checkboxdisabled2">
+											<span class="checkbox">2</span>
+										</label>
+									</div>
+								</div>
+
+								<div class="form-group">
+									<h6 class="form-label">Disabled Radio</h6>
+									<div class="eqx-radio eqx-radio-inline">
+										<input type="radio" name="inlineRadioOptions" id="disabledRadio1" value="y" disabled>
+										<label for="disabledRadio1">
+											<span class="radio">Yes</span>
+										</label>
+									</div>
+									<div class="eqx-radio eqx-radio-inline">
+										<input type="radio" name="inlineRadioOptions" id="disabledRadio2" value="n" disabled
+											   checked>
+										<label for="disabledRadio2">
+											<span class="radio">No</span>
+										</label>
+									</div>
+								</div>
+							</code>
+						</div>
+
+						<div class="panel-footer">
+							<div class="toggle-codesnippet">
+								<a data-text-original="Show Code Snippet" data-text-swap="Hide Code Snippet" onclick=toggleSnippet('form-disabled-code-snippet') id="form-disabled-code-snippet">Show Code Snippet</a>
+								<div class="form-disabled-code-snippet code-snippet">
+									<script type="text/plain" class="language-markup">
+										<div class="form-group">
+											<label class="form-label">Email (Disabled Input)</label>
+											<input type="email" class="form-element" placeholder="Email" disabled>
+											<div class="disabled-text">
+												<ul>
+													<li>Disabled Text Hint</li>
+												</ul>
+											</div>
+										</div>
+
+										<div class="form-group">
+											<h6 class="form-label">Disabled Checkbox</h6>
+											<div class="eqx-checkbox eqx-checkbox-inline">
+												<input type="checkbox" name="checkboxinline" id="checkboxdisabled1" value="1" checked
+													   disabled>
+												<label for="checkboxdisabled1">
+													<span class="checkbox">1</span>
+												</label>
+											</div>
+
+											<div class="eqx-checkbox eqx-checkbox-inline">
+												<input type="checkbox" name="checkboxinline" id="checkboxdisabled2" value="2" disabled>
+												<label for="checkboxdisabled2">
+													<span class="checkbox">2</span>
+												</label>
+											</div>
+										</div>
+
+										<div class="form-group">
+											<h6 class="form-label">Disabled Radio</h6>
+											<div class="eqx-radio eqx-radio-inline">
+												<input type="radio" name="inlineRadioOptions" id="disabledRadio1" value="y" disabled>
+												<label for="disabledRadio1">
+													<span class="radio">Yes</span>
+												</label>
+											</div>
+											<div class="eqx-radio eqx-radio-inline">
+												<input type="radio" name="inlineRadioOptions" id="disabledRadio2" value="n" disabled
+													   checked>
+												<label for="disabledRadio2">
+													<span class="radio">No</span>
+												</label>
+											</div>
+										</div>
+									</script>
+								</div>
+							</div>
+						</div>
+					</div> -->
+
+					<!-- Element with Error-->
+					<!-- <div class="panel" id="errorELement">
+						<div class="panel-heading">
+							<h1>Form Error Element</h1>
+						</div>
+						<div class="panel-body">
+							<code>
+								<div class="form-group form-error">
+									<label class="form-label">Email (Input with error)</label>
+									<input type="email" class="form-element" placeholder="Email">
+								</div>
+
+								<div class="form-group form-error">
+									<label class="form-label">Name (input with error with hint text)</label>
+									<input type="text" class="form-element" placeholder="Name">
+									<div class="hint-text">
+										<ul>
+											<li>Name should not contain numbers!</li>
+										</ul>
+									</div>
+								</div>
+
+								<label class="form-label">Terms & Conditions</label>
+								<div class="eqx-checkbox form-error">
+									<input type="checkbox" name="checkboxerror" id="checkboxerror">
+									<label for="checkboxerror">
+										<span class="checkbox">I agree</span>
+									</label>
+								</div>
+							</code>
+						</div>
+
+						<div class="panel-footer">
+							<div class="toggle-codesnippet">
+								<a data-text-original="Show Code Snippet" data-text-swap="Hide Code Snippet" onclick=toggleSnippet('form-error-code-snippet') id="form-error-code-snippet">Show Code Snippet</a>
+								<div class="form-error-code-snippet code-snippet">
+									<script type="text/plain" class="language-markup">
+										<div class="form-group form-error">
+											<label class="form-label">Email (Input with error)</label>
+											<input type="email" class="form-element" placeholder="Email">
+										</div>
+
+										<div class="form-group form-error">
+											<label class="form-label">Name (input with error with hint text)</label>
+											<input type="text" class="form-element" placeholder="Name">
+											<div class="hint-text">
+												<ul>
+													<li>Name should not contain numbers!</li>
+												</ul>
+											</div>
+										</div>
+
+										<label class="form-label">Terms & Conditions</label>
+										<div class="eqx-checkbox form-error">
+											<input type="checkbox" name="checkboxerror" id="checkboxerror">
+											<label for="checkboxerror">
+												<span class="checkbox">I agree</span>
+											</label>
+										</div>
+									</script>
+									</div>
+								</div>
+						</div>
+					</div> -->
+
+					<!-- Checkbox Slider & Toggle -->
+					<!-- <div class="panel" id="checkboxSliderToggle">
+						<div class="panel-heading">
+							<h1>Checkbox Slider & Toggle</h1>
+						</div>
+						<div class="panel-body">
+							<code>
+								<label class="form-label">Checkbox Toggle</label>
+								<div class="eqx-checkbox-toggle">
+									<input type="checkbox" name="checkboxtoggle" id="checkboxtoggle" checked>
+									<label for="checkboxtoggle">
+										<span class="checkbox">I agree</span>
+									</label>
+								</div>
+
+								<label class="form-label">Checkbox Slider</label>
+								<div class="eqx-checkbox-slider">
+									<input type="checkbox" name="checkboxslider" id="checkboxslider">
+									<label for="checkboxslider">
+										<span class="checkbox">I agree</span>
+									</label>
+								</div>
+							</code>
+						</div>
+
+						<div class="panel-footer">
+							<div class="toggle-codesnippet">
+								<a data-text-original="Show Code Snippet" data-text-swap="Hide Code Snippet" onclick=toggleSnippet('form-checkbox-code-snippet') id="form-checkbox-code-snippet">Show Code Snippet</a>
+								<div class="form-checkbox-code-snippet code-snippet">
+									<script type="text/plain" class="language-markup">
+										<label class="form-label">Checkbox Toggle</label>
+										<div class="eqx-checkbox-toggle">
+											<input type="checkbox" name="checkboxtoggle" id="checkboxtoggle" checked>
+											<label for="checkboxtoggle">
+												<span class="checkbox">I agree</span>
+											</label>
+										</div>
+
+										<label class="form-label">Checkbox Slider</label>
+										<div class="eqx-checkbox-slider">
+											<input type="checkbox" name="checkboxslider" id="checkboxslider">
+											<label for="checkboxslider">
+												<span class="checkbox">I agree</span>
+											</label>
+										</div>
+									</script>
+									</div>
+								</div>
+						</div>
+					</div> -->
+
+					<!-- Modal -->
+					<!-- <div class="panel" id="modal">
+						<div class="panel-heading">
+							<h1>Modal</h1>
+						</div>
+						<div class="panel-body">
+							<button class="eqx-btn eqx-btn-primary" type="button" data-btn="modal" data-target="myModal">
+								Open Modal
+							</button>
+
+							<div class="eqx-modal" id="myModal">
+								<div class="eqx-modal-content">
+									<div class="eqx-modal-heading">
+										<i class="close" data-close="modal"></i>
+										<span class="title">Modal Title</span>
+									</div>
+									<div class="eqx-modal-body">
+										<span class="content">Modal Content</span>
+									</div>
+									<div class="eqx-modal-footer">
+										<button class="eqx-btn eqx-btn-primary" data-close="modal" type="button">OK</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="panel-footer">
+							<div class="toggle-codesnippet">
+								<a data-text-original="Show Code Snippet" data-text-swap="Hide Code Snippet" onclick=toggleSnippet('modal-code-snippet') id="modal-code-snippet">Show Code Snippet</a>
+								<div class="modal-code-snippet code-snippet">
+									<script type="text/plain" class="language-markup">
+										<button class="eqx-btn eqx-btn-primary" type="button" data-btn="modal" data-target="myModal">
+											Open Modal
+										</button>
+
+										<div class="eqx-modal" id="myModal">
+											<div class="eqx-modal-content">
+												<div class="eqx-modal-heading">
+													<i class="close" data-close="modal"></i>
+													<span class="title">Modal Title</span>
+												</div>
+												<div class="eqx-modal-body">
+													<span class="content">Modal Content</span>
+												</div>
+												<div class="eqx-modal-footer">
+													<button class="eqx-btn eqx-btn-primary" data-close="modal" type="button">OK</button>
+												</div>
+											</div>
+										</div>
+									</script>
+									</div>
+								</div>
+						</div>
+					</div> -->
+
+					<!-- Tooltip -->
+					<div class="panel" id="tooltip">
+						<div class="panel-heading">
+							<h1>Tooltip</h1>
+						</div>
+						<div class="panel-body">
+									<div class="topm bottomm">
+										<p class="bottomm">Tooltip on Link</p>
+										<a href="#" class="tooltip" title="Tooltip on Link">Tooltip</a>
+									</div>
+									<div class="topm bottomm">
+										<p class="bottomm">Tooltip on Button</p>
+										<button class="eqx-btn eqx-btn-primary tooltip"
+												title="I’m the tooltip on button." type="button" position="right">
+												OK
+										</button>
+									</div>
+									<div class="topm bottomm">
+										<p class="bottomm">Tooltip on  Icon</p>
+										<span class="tooltip" title="I’m the tooltip on icon." data-tooltipster='{"side":"top"}'>
+											<i class="info-eqx-icon"></i>
+										</span>
+									</div>
+									<div class="topm bottomm tooltip-position">
+										<p class="bottomm">Tooltip Position</p>
+										<a href="#" class="tooltip" title="I’m the tooltip text on top." data-tooltipster='{"side":"top"}'>Tooltip TOP</a>
+										<a href="#" class="tooltip" title="I’m the tooltip text on right." data-tooltipster='{"side":"right"}'>Tooltip RIGHT</a>
+										<a href="#" class="tooltip" title="I’m the tooltip text on bottom." data-tooltipster='{"side":"bottom"}'>Tooltip BOTTOM</a>
+										<a href="#" class="tooltip" title="I’m the tooltip text on left." data-tooltipster='{"side":"left"}'>Tooltip LEFT</a>
+									</div>
+									<div class="topm bottomm tooltip-position">
+										<p class="bottomm">Tooltip Position with arrow</p>
+										<a href="#" class="tooltip" title="I’m the tooltip text on top." data-tooltipster='{"side":"top", "arrow":"true"}'>Tooltip TOP with arrow</a>
+										<a href="#" class="tooltip" title="I’m the tooltip text on right." data-tooltipster='{"side":"right", "arrow":"true"}'>Tooltip RIGHT with arrow</a>
+										<a href="#" class="tooltip" title="I’m the tooltip text on bottom." data-tooltipster='{"side":"bottom", "arrow":"true"}'>Tooltip BOTTOM with arrow</a>
+										<a href="#" class="tooltip" title="I’m the tooltip text on left." data-tooltipster='{"side":"left", "arrow":"true"}'>Tooltip LEFT with arrow</a>
+									</div>
+						</div>
+						<div class="panel-footer">
+							<div class="toggle-codesnippet">
+								<a data-text-original="Show Code Snippet" data-text-swap="Hide Code Snippet" onclick=toggleSnippet('tooltip-code-snippet') id="tooltip-code-snippet">Show Code Snippet</a>
+								<div class="tooltip-code-snippet code-snippet">
+									<script type="text/plain" class="language-markup">
+										Tooltip on Link
+										<a href="#" class="tooltip" data-tooltip="I’m the tooltip text on link.">Link</a>
+
+										Tooltip on Button
+										<button class="eqx-btn eqx-btn-primary tooltip-top"
+												data-tooltip="I’m the tooltip on button." type="button">Button
+										</button>
+
+										Tooltip on Icon
+										<span class="tooltip-right" data-tooltip="I’m the tooltip on icon." data-tooltipster='{"side":"right"}'>
+										<i class="info-eqx-icon"></i></span>
+
+										Tooltip Positions :
+										Top
+										<a href="#" class="tooltip" title="I’m the tooltip text on top." data-tooltipster='{"side":"top"}'>Tooltip TOP</a>
+
+										Right
+										<a href="#" class="tooltip" title="I’m the tooltip text on right." data-tooltipster='{"side":"right"}'>Tooltip RIGHT</a>
+
+										Bottom
+										<a href="#" class="tooltip" title="I’m the tooltip text on bottom." data-tooltipster='{"side":"bottom", "arrow":"true"}'>Tooltip BOTTOM with arrow</a>
+
+										Left
+										<a href="#" class="tooltip" title="I’m the tooltip text on left." data-tooltipster='{"side":"left", "arrow":"true"}'>Tooltip LEFT with arrow</a>
+
+										Tooltip Arrow with Positions :
+										Top
+										<a href="#" class="tooltip" title="I’m the tooltip text on top." data-tooltipster='{"side":"top", "arrow":"true"}'>Tooltip TOP with arrow</a>
+
+										Right
+										<a href="#" class="tooltip" title="I’m the tooltip text on right." data-tooltipster='{"side":"right", "arrow":"true"}'>Tooltip RIGHT with arrow</a>
+
+										Bottom
+										<a href="#" class="tooltip" title="I’m the tooltip text on bottom." data-tooltipster='{"side":"bottom", "arrow":"true"}'>Tooltip BOTTOM with arrow</a>
+
+										Left
+										<a href="#" class="tooltip" title="I’m the tooltip text on left." data-tooltipster='{"side":"left", "arrow":"true"}'>Tooltip LEFT with arrow</a>
+									</script>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Banners -->
+					<div class="panel" id="banners">
+						<div class="panel-heading">
+							<h1>Banners</h1>
+						</div>
+						<div class="panel-body">
+							<div class="topm bottomm">
+								<p class="bottomm">Application Banner</p>
+							</div>
+							<div class="topm bottomm">
+								<div class="banner banner-danger banner-application">
+									<div class="banner-message">
+										<i class="shape-eqx-icon banner-info-icon"></i>
+										<p><span>ECP Upcoming Downtime:</span> On Sept 19, 2016, 17:00 GMT.</p>
+										<a><i class="close-eqx-icon"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="topm bottomm">
+								<div class="banner banner-warning banner-application">
+									<div class="banner-message">
+										<i class="shape-eqx-icon banner-info-icon"></i>
+										<p><span>ECP Upcoming Downtime:</span> On Sept 19, 2016, 17:00 GMT.</p>
+										<a><i class="close-eqx-icon"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="topm bottomm">
+								<div class="banner banner-success banner-application">
+									<div class="banner-message">
+										<i class="shape-eqx-icon banner-info-icon"></i>
+										<p><span>ECP Upcoming Downtime:</span> On Sept 19, 2016, 17:00 GMT.</p>
+										<a><i class="close-eqx-icon"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="topm bottomm">
+								<div class="banner banner-primary banner-application">
+									<div class="banner-message no-icon">
+										<p><span>ECP Upcoming Downtime: </span>On Sept 19, 2016, 17:00 GMT.</p>
+										<a href="#">Link</a>
+										<a><i class="close-eqx-icon"></i></a>
+									</div>
+								</div>
+							</div>
+
+							<div class="topm bottomm">
+								<p class="bottomm">Application Banner States and Styles</p>
+							</div>
+							<p class="bottomm">Informational Banner</p>
+							<div class="topm bottomm">
+								<div class="banner banner-primary banner-information">
+									<div class="banner-message no-icon">
+										<i class="info-eqx-icon banner-info-icon"></i>
+										<p><span>Did you know? </span>Submitted orders may take 15 minutes to be reconciled.</p>
+										<a href="#">Link</a>
+										<a><i class="close-light-eqx-icon"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="topm bottomm">
+								<div class="banner banner-danger banner-information">
+									<div class="banner-message">
+										<i class="shape-eqx-icon banner-info-icon"></i>
+										<p><span>Error: </span>One of the fields contains errors. Please correct the errors highlighted.</p>
+										<a><i class="close-light-eqx-icon"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="topm bottomm">
+								<div class="banner banner-warning banner-information">
+									<div class="banner-message">
+										<i class="shape-eqx-icon banner-info-icon"></i>
+										<p><span>Alert:</span> Expect service disruption between these dates due to site maintenence</p>
+										<a><i class="close-light-eqx-icon"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="topm bottomm">
+								<div class="banner banner-success banner-information">
+									<div class="banner-message">
+										<i class="check-eqx-icon banner-info-icon"></i>
+										<p><span>Success:</span> Users have been successfully added.</p>
+										<a><i class="close-light-eqx-icon"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel-footer">
+							<div class="toggle-codesnippet">
+								<a data-text-original="Show Code Snippet" data-text-swap="Hide Code Snippet" onclick=toggleSnippet('banner-code-snippet') id="banner-code-snippet">Show Code Snippet</a>
+								<div class="banner-code-snippet code-snippet">
+									<script type="text/plain" class="language-markup">
+									// Application Status Banner
+										<div class="banner banner-danger banner-application">
+											<div class="banner-message">
+												<i class="shape-eqx-icon banner-info-icon"></i>
+												<p><span>ECP Upcoming Downtime:</span> On Sept 19, 2016, 17:00 GMT.</p>
+												<a><i class="close-eqx-icon"></i></a>
+											</div>
+										</div>
+										<div class="banner banner-warning banner-application">
+											<div class="banner-message">
+												<i class="shape-eqx-icon banner-info-icon"></i>
+												<p><span>ECP Upcoming Downtime:</span> On Sept 19, 2016, 17:00 GMT.</p>
+												<a><i class="close-eqx-icon"></i></a>
+											</div>
+										</div>
+										<div class="banner banner-success banner-application">
+											<div class="banner-message">
+												<i class="shape-eqx-icon banner-info-icon"></i>
+												<p><span>ECP Upcoming Downtime:</span> On Sept 19, 2016, 17:00 GMT.</p>
+												<a><i class="close-eqx-icon"></i></a>
+											</div>
+										</div>
+										<div class="banner banner-primary banner-application">
+											<div class="banner-message no-icon">
+												<p><span>ECP Upcoming Downtime: </span>On Sept 19, 2016, 17:00 GMT.</p>
+												<a href="#">Link</a>
+												<a><i class="close-eqx-icon"></i></a>
+											</div>
+										</div>
+										// Application Information Banner States and Styles
+										<div class="banner banner-primary banner-information">
+											<div class="banner-message no-icon">
+												<i class="info-eqx-icon banner-info-icon"></i>
+												<p><span>Did you know? </span>Submitted orders may take 15 minutes to be reconciled.</p>
+												<a href="#">Link</a>
+												<a><i class="close-eqx-icon"></i></a>
+											</div>
+										</div>
+										<div class="banner banner-danger banner-information">
+											<div class="banner-message">
+												<i class="shape-eqx-icon banner-info-icon"></i>
+												<p><span>Error: </span>One of the fields contains errors. Please correct the errors highlighted.</p>
+												<a><i class="close-eqx-icon"></i></a>
+											</div>
+										</div>
+										<div class="banner banner-warning banner-information">
+											<div class="banner-message">
+												<i class="shape-eqx-icon banner-info-icon"></i>
+												<p><span>Alert:</span> Expect service disruption between these dates due to site maintenence</p>
+												<a><i class="close-eqx-icon"></i></a>
+											</div>
+										</div>
+										<div class="banner banner-success banner-information">
+											<div class="banner-message">
+												<i class="check-eqx-icon banner-info-icon"></i>
+												<p><span>Success:</span> Users have been successfully added.</p>
+												<a><i class="close-eqx-icon"></i></a>
+											</div>
+										</div>
+									</script>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Popover -->
+					<div class="panel" id="popovers">
+						<div class="panel-heading">
+							<h1>Popover</h1>
+						</div>
+						<div class="panel-body">
+							<h2>Trigger Action</h2>
+							<div class="topm bottomm">
+								<button type="button" class="eqx-btn eqx-btn-primary cta-btn popover" data-tooltip-content=".top-popover-contents" data-tooltipster='{"side":"top","trigger":"click"}'>Click</button>
+								<button type="button" class="eqx-btn eqx-btn-primary cta-btn popover" data-tooltip-content=".top-popover-contents" data-tooltipster='{"side":"top","trigger":"hover"}'>Hover</button>
+								<div class="popover_templates" style="display:none;">
+									<div class="top-popover-contents popover-contents">
+										<div class="popover-header">
+											<h4 class="popover-title">This is a Popover Title!</h4>
+											<a onclick="closePopover()"><i class="close-light-eqx-icon"></i></a>
+										</div>
+										<div class="popover-body">
+											<h5>Popover Content</h5>
+											<p>This is the content of my tooltip placed in a seperate html tag!This is the content of my tooltip placed in a seperate html tag!</p>
+										</div>
+										<div class="popover-footer">
+											<button type="button" class="eqx-btn eqx-btn-primary cta-btn">CTA</button>
+											<button type="button" class="eqx-btn eqx-btn-basic" onclick="closePopover()">Cancel</button>
+										</div>
+					    		</div>
+								</div>
+							</div>
+							<div class="topm bottomm">
+								<h2 class="bottomm">Position</h2>
+								<a href="#none" class="popover" data-tooltip-content=".top-popover-contents" data-tooltipster='{"side":"top"}'>Popover on Top</a>
+								<div class="popover_templates" style="display:none;">
+									<div class="top-popover-contents popover-contents">
+										<div class="popover-header">
+											<h4 class="popover-title">This is a Popover Title!</h4>
+											<a onclick="closePopover()"><i class="close-light-eqx-icon"></i></a>
+										</div>
+										<div class="popover-body">
+											<h5>Popover Content</h5>
+											<p>This is the content of my tooltip placed in a seperate html tag!This is the content of my tooltip placed in a seperate html tag!</p>
+										</div>
+										<div class="popover-footer">
+											<button type="button" class="eqx-btn eqx-btn-primary cta-btn">CTA</button>
+											<button type="button" class="eqx-btn eqx-btn-basic" onclick="closePopover()">Cancel</button>
+										</div>
+					    		</div>
+								</div>
+							</div>
+							<div class="topm bottomm">
+								<a href="#none" class="popover" data-tooltip-content=".right-popover-contents" data-tooltipster='{"side":"right"}' >Popover on Right</a>
+								<div class="popover_templates" style="display:none;">
+									<div class="right-popover-contents popover-contents">
+										<div class="popover-header">
+											<h4 class="popover-title">This is a Popover Title!</h4>
+											<a onclick="closePopover()"><i class="close-light-eqx-icon"></i></a>
+										</div>
+										<div class="popover-body">
+											<h5>Popover Content</h5>
+											<span>This is the content of my tooltip placed in a seperate html tag!</span>
+											<span>This is the content of my tooltip placed in a seperate html tag!</span>
+										</div>
+										<div class="popover-footer">
+											<button type="button" class="eqx-btn eqx-btn-primary cta-btn">CTA</button>
+											<button type="button" class="eqx-btn eqx-btn-basic" onclick="closePopover()">Cancel</button>
+										</div>
+					    		</div>
+								</div>
+							</div>
+							<div class="topm bottomm">
+								<a href="#none" class="popover" data-tooltip-content=".bottom-popover-contents" data-tooltipster='{"side":"bottom"}' >Popover on Bottom</a>
+								<div class="popover_templates" style="display:none;">
+									<div class="bottom-popover-contents popover-contents">
+										<div class="popover-header">
+											<h4 class="popover-title">This is a Popover Title!</h4>
+											<a onclick="closePopover()"><i class="close-light-eqx-icon"></i></a>
+										</div>
+										<div class="popover-body">
+											<h5>Popover Content</h5>
+											<span>This is the content of my tooltip placed in a seperate html tag!</span>
+											<span>This is the content of my tooltip placed in a seperate html tag!</span>
+										</div>
+										<div class="popover-footer">
+											<button type="button" class="eqx-btn eqx-btn-primary cta-btn">CTA</button>
+											<button type="button" class="eqx-btn eqx-btn-basic" onclick="closePopover()">Cancel</button>
+										</div>
+					    		</div>
+								</div>
+							</div>
+							<div class="topm bottomm">
+								<a href="#none" class="popover" data-tooltip-content=".left-popover-contents" data-tooltipster='{"side":"left"}' >Popover on Left</a>
+								<div class="popover_templates" style="display:none;">
+									<div class="left-popover-contents popover-contents">
+										<div class="popover-header">
+											<h4 class="popover-title">This is a Popover Title!</h4>
+											<a onclick="closePopover()"><i class="close-light-eqx-icon"></i></a>
+										</div>
+										<div class="popover-body">
+											<h5>Popover Content</h5>
+											<span>This is the content of my tooltip placed in a seperate html tag!</span>
+											<span>This is the content of my tooltip placed in a seperate html tag!</span>
+										</div>
+										<div class="popover-footer">
+											<button type="button" class="eqx-btn eqx-btn-primary cta-btn">CTA</button>
+											<button type="button" class="eqx-btn eqx-btn-basic" onclick="closePopover()">Cancel</button>
+										</div>
+					    		</div>
+								</div>
+							</div>
+							<h2 class="bottomm">Placement</h2>
+							<div class="custom-position-tooltip-container">
+								<div class="custom-position-row-1">
+									<div class="topm bottomm">
+										<a href="#none" class="popover" data-tooltip-content=".extra-small-popover-contents" data-tooltipster='{"side":"top","placement":"top-left","popover-size":"extra-small", "theme":"light"}'>Top Left</a>
+										<div class="popover_templates" style="display:none;">
+											<div class="extra-small-popover-contents popover-contents">
+												<div class="popover-body">
+													<span>Aenean lacinia bibendum nulla sed consectetur sed consectetur.<a> Link</a> </span>
+												</div>
+							    		</div>
+										</div>
+									</div>
+									<div class="topm bottomm">
+										<a href="#none" class="popover" data-tooltip-content=".extra-small-popover-contents" data-tooltipster='{"side":"top","popover-size":"extra-small", "theme":"light"}'>Top</a>
+										<div class="popover_templates" style="display:none;">
+											<div class="extra-small-popover-contents popover-contents">
+												<div class="popover-body">
+													<span>Aenean lacinia bibendum nulla sed consectetur sed consectetur.<a> Link</a> </span>
+												</div>
+							    		</div>
+										</div>
+									</div>
+									<div class="topm bottomm">
+										<a href="#none" class="popover" data-tooltip-content=".extra-small-popover-contents" data-tooltipster='{"side":"top","placement":"top-right","popover-size":"extra-small", "theme":"light"}'>Top Right</a>
+										<div class="popover_templates" style="display:none;">
+											<div class="extra-small-popover-contents popover-contents">
+												<div class="popover-body">
+													<span>Aenean lacinia bibendum nulla sed consectetur sed consectetur.<a> Link</a> </span>
+												</div>
+							    		</div>
+										</div>
+									</div>
+								</div>
+								<div class="custom-position-row-2">
+									<div class="placement-left">
+										<div class="topm bottomm">
+											<a href="#none" class="popover" data-tooltip-content=".extra-small-popover-contents" data-tooltipster='{"side":"left","placement":"left-top","popover-size":"extra-small", "theme":"light"}'>Left Top</a>
+											<div class="popover_templates" style="display:none;">
+												<div class="extra-small-popover-contents popover-contents">
+													<div class="popover-body">
+														<span>Aenean lacinia bibendum nulla sed consectetur sed consectetur.<a> Link</a> </span>
+													</div>
+								    		</div>
+											</div>
+										</div>
+										<div class="topm bottomm">
+											<a href="#none" class="popover" data-tooltip-content=".extra-small-popover-contents" data-tooltipster='{"side":"left","popover-size":"extra-small", "theme":"light"}'>Left</a>
+											<div class="popover_templates" style="display:none;">
+												<div class="extra-small-popover-contents popover-contents">
+													<div class="popover-body">
+														<span>Aenean lacinia bibendum nulla sed consectetur sed consectetur.<a> Link</a> </span>
+													</div>
+								    		</div>
+											</div>
+										</div>
+										<div class="topm bottomm">
+											<a href="#none" class="popover" data-tooltip-content=".extra-small-popover-contents" data-tooltipster='{"side":"left","placement":"left-bottom","popover-size":"extra-small", "theme":"light"}'>Left Bottom</a>
+											<div class="popover_templates" style="display:none;">
+												<div class="extra-small-popover-contents popover-contents">
+													<div class="popover-body">
+														<span>Aenean lacinia bibendum nulla sed consectetur sed consectetur.<a> Link</a> </span>
+													</div>
+								    		</div>
+											</div>
+										</div>
+									</div>
+									<div class="placement-right">
+										<div class="topm bottomm">
+											<a href="#none" class="popover" data-tooltip-content=".extra-small-popover-contents" data-tooltipster='{"side":"right","placement":"right-top","popover-size":"extra-small", "theme":"light"}'>Right Top</a>
+											<div class="popover_templates" style="display:none;">
+												<div class="extra-small-popover-contents popover-contents">
+													<div class="popover-body">
+														<span>Aenean lacinia bibendum nulla sed consectetur sed consectetur.<a> Link</a> </span>
+													</div>
+								    		</div>
+											</div>
+										</div>
+										<div class="topm bottomm">
+											<a href="#none" class="popover" data-tooltip-content=".extra-small-popover-contents" data-tooltipster='{"side":"right","popover-size":"extra-small", "theme":"light"}'>Right</a>
+											<div class="popover_templates" style="display:none;">
+												<div class="extra-small-popover-contents popover-contents">
+													<div class="popover-body">
+														<span>Aenean lacinia bibendum nulla sed consectetur sed consectetur.<a> Link</a> </span>
+													</div>
+								    		</div>
+											</div>
+										</div>
+										<div class="topm bottomm">
+											<a href="#none" class="popover" data-tooltip-content=".extra-small-popover-contents" data-tooltipster='{"side":"right","placement":"right-bottom","popover-size":"extra-small", "theme":"light"}'>Right Bottom</a>
+											<div class="popover_templates" style="display:none;">
+												<div class="extra-small-popover-contents popover-contents">
+													<div class="popover-body">
+														<span>Aenean lacinia bibendum nulla sed consectetur sed consectetur.<a> Link</a> </span>
+													</div>
+								    		</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="custom-position-row-3">
+									<div class="topm bottomm">
+										<a href="#none" class="popover" data-tooltip-content=".extra-small-popover-contents" data-tooltipster='{"side":"bottom","placement":"bottom-left","popover-size":"extra-small", "theme":"light"}'>Bottom Left</a>
+										<div class="popover_templates" style="display:none;">
+											<div class="extra-small-popover-contents popover-contents">
+												<div class="popover-body">
+													<span>Aenean lacinia bibendum nulla sed consectetur sed consectetur.<a> Link</a> </span>
+												</div>
+							    		</div>
+										</div>
+									</div>
+									<div class="topm bottomm">
+										<a href="#none" class="popover" data-tooltip-content=".extra-small-popover-contents" data-tooltipster='{"side":"bottom","popover-size":"extra-small", "theme":"light"}'>Bottom</a>
+										<div class="popover_templates" style="display:none;">
+											<div class="extra-small-popover-contents popover-contents">
+												<div class="popover-body">
+													<span>Aenean lacinia bibendum nulla sed consectetur sed consectetur.<a> Link</a> </span>
+												</div>
+							    		</div>
+										</div>
+									</div>
+									<div class="topm bottomm">
+										<a href="#none" class="popover" data-tooltip-content=".extra-small-popover-contents" data-tooltipster='{"side":"bottom","placement":"bottom-right","popover-size":"extra-small", "theme":"light"}'> Bottom Right</a>
+										<div class="popover_templates" style="display:none;">
+											<div class="extra-small-popover-contents popover-contents">
+												<div class="popover-body">
+													<span>Aenean lacinia bibendum nulla sed consectetur sed consectetur.<a> Link</a> </span>
+												</div>
+							    		</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="topm bottomm">
+								<h2 class="bottomm">Size</h2>
+							</div>
+							<div class="topm bottomm">
+								<a href="#none" class="popover" data-tooltip-content=".small-popover-contents" data-tooltipster='{"side":"top"}' >Popover Small</a>
+								<div class="popover_templates" style="display:none;">
+									<div class="small-popover-contents popover-contents">
+										<div class="popover-header">
+											<h4 class="popover-title">This is a Popover Title!</h4>
+											<a onclick="closePopover()"><i class="close-light-eqx-icon"></i></a>
+										</div>
+										<div class="popover-body">
+											<h5>Popover Content</h5>
+											<span>This is the content of my tooltip placed in a seperate html tag!</span>
+											<span>This is the content of my tooltip placed in a seperate html tag!</span>
+										</div>
+										<div class="popover-footer">
+											<button type="button" class="eqx-btn eqx-btn-primary cta-btn">CTA</button>
+											<button type="button" class="eqx-btn eqx-btn-basic" onclick="closePopover()">Cancel</button>
+										</div>
+					    		</div>
+								</div>
+							</div>
+							<div class="topm bottomm">
+								<a href="#none" class="popover" data-tooltip-content=".large-popover-contents" data-tooltipster='{"side":"top","popover-size":"large"}' >Popover Large</a>
+								<div class="popover_templates" style="display:none;">
+									<div class="large-popover-contents popover-contents">
+										<div class="popover-header">
+											<h4 class="popover-title">This is a Popover Title!</h4>
+											<a onclick="closePopover()"><i class="close-light-eqx-icon"></i></a>
+										</div>
+										<div class="popover-body">
+											<h5>Popover Content</h5>
+											<span>This is the content of my tooltip placed in a seperate html tag!</span>
+											<span>This is the content of my tooltip placed in a seperate html tag!</span>
+											<span>This is the content of my tooltip placed in a seperate html tag!</span>
+										</div>
+										<div class="popover-footer">
+											<button type="button" class="eqx-btn eqx-btn-primary cta-btn">CTA</button>
+											<button type="button" class="eqx-btn eqx-btn-basic" onclick="closePopover()">Cancel</button>
+										</div>
+					    		</div>
+								</div>
+							</div>
+							<div class="topm bottomm">
+								<a href="#none" class="popover" data-tooltip-content=".extra-small-popover-contents" data-tooltipster='{"side":"right","popover-size":"extra-small"}'>Popover Extra Small</a>
+								<div class="popover_templates" style="display:none;">
+									<div class="extra-small-popover-contents popover-contents">
+										<div class="popover-body">
+											<span>Aenean lacinia bibendum nulla sed consectetur sed consectetur.<a> Link</a> </span>
+										</div>
+					    		</div>
+								</div>
+							</div>
+							<div class="topm bottomm">
+								<h2 class="bottomm">Theme</h2>
+							</div>
+							<div class="topm bottomm">
+								<a href="#none" class="popover" data-tooltip-content=".extra-small-popover-contents" data-tooltipster='{"side":"right","popover-size":"extra-small", "theme":"dark"}'>Dark</a>
+								<div class="popover_templates" style="display:none;">
+									<div class="extra-small-popover-contents popover-contents">
+										<div class="popover-body">
+											<span>Aenean lacinia bibendum nulla sed consectetur sed consectetur. </span>
+										</div>
+					    		</div>
+								</div>
+							</div>
+							<div class="topm bottomm">
+								<a href="#none" class="popover" data-tooltip-content=".extra-small-popover-contents" data-tooltipster='{"side":"right","popover-size":"extra-small", "theme":"light"}'>Light</a>
+								<div class="popover_templates" style="display:none;">
+									<div class="extra-small-popover-contents popover-contents">
+										<div class="popover-body">
+											<span>Aenean lacinia bibendum nulla sed consectetur sed consectetur.<a> Link</a> </span>
+										</div>
+					    		</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel-footer">
+							<div class="toggle-codesnippet">
+								<a data-text-original="Show Code Snippet" data-text-swap="Hide Code Snippet" onclick=toggleSnippet('popover-code-snippet') id="popover-code-snippet">Show Code Snippet</a>
+								<div class="popover-code-snippet code-snippet">
+									<script type="text/plain" class="language-markup">
+										<div class="topm bottomm">
+											<h2 class="bottomm">Placement</h2>
+											<!-- Popover on Top -->
+											<a href="#none" class="popover" data-tooltip-content=".top-popover-contents" data-tooltipster='{"side":"top"}'>Popover on Top</a>
+											<div class="popover_templates" style="display:none;">
+												<div class="top-popover-contents popover-contents">
+													<div class="popover-header">
+														<h4 class="popover-title">This is a Popover Title!</h4>
+														<a onclick="closePopover()"><i class="close-light-eqx-icon"></i></a>
+													</div>
+													<div class="popover-body">
+														<h5>Popover Content</h5>
+														<p>This is the content of my tooltip placed in a seperate html tag!This is the content of my tooltip placed in a seperate html tag!</p>
+													</div>
+													<div class="popover-footer">
+														<button type="button" class="eqx-btn eqx-btn-primary cta-btn">CTA</button>
+														<button type="button" class="eqx-btn eqx-btn-basic" onclick="closePopover()">Cancel</button>
+													</div>
+								    		</div>
+											</div>
+										</div>
+										<div class="topm bottomm">
+											<!-- Popover on Right -->
+											<a href="#none" class="popover" data-tooltip-content=".right-popover-contents" data-tooltipster='{"side":"right"}' >Popover on Right</a>
+											<div class="popover_templates" style="display:none;">
+												<div class="right-popover-contents popover-contents">
+													<div class="popover-header">
+														<h4 class="popover-title">This is a Popover Title!</h4>
+														<a onclick="closePopover()"><i class="close-light-eqx-icon"></i></a>
+													</div>
+													<div class="popover-body">
+														<h5>Popover Content</h5>
+														<span>This is the content of my tooltip placed in a seperate html tag!</span>
+														<span>This is the content of my tooltip placed in a seperate html tag!</span>
+													</div>
+													<div class="popover-footer">
+														<button type="button" class="eqx-btn eqx-btn-primary cta-btn">CTA</button>
+														<button type="button" class="eqx-btn eqx-btn-basic" onclick="closePopover()">Cancel</button>
+													</div>
+								    		</div>
+											</div>
+										</div>
+										<div class="topm bottomm">
+										<!-- Popover on Bottom -->
+											<a href="#none" class="popover" data-tooltip-content=".bottom-popover-contents" data-tooltipster='{"side":"bottom"}' >Popover on Bottom</a>
+											<div class="popover_templates" style="display:none;">
+												<div class="bottom-popover-contents popover-contents">
+													<div class="popover-header">
+														<h4 class="popover-title">This is a Popover Title!</h4>
+														<a onclick="closePopover()"><i class="close-light-eqx-icon"></i></a>
+													</div>
+													<div class="popover-body">
+														<h5>Popover Content</h5>
+														<span>This is the content of my tooltip placed in a seperate html tag!</span>
+														<span>This is the content of my tooltip placed in a seperate html tag!</span>
+													</div>
+													<div class="popover-footer">
+														<button type="button" class="eqx-btn eqx-btn-primary cta-btn">CTA</button>
+														<button type="button" class="eqx-btn eqx-btn-basic" onclick="closePopover()">Cancel</button>
+													</div>
+								    		</div>
+											</div>
+										</div>
+										<div class="topm bottomm">
+										<!-- Popover on Left -->
+											<a href="#none" class="popover" data-tooltip-content=".left-popover-contents" data-tooltipster='{"side":"left"}' >Popover on Left</a>
+											<div class="popover_templates" style="display:none;">
+												<div class="left-popover-contents popover-contents">
+													<div class="popover-header">
+														<h4 class="popover-title">This is a Popover Title!</h4>
+														<a onclick="closePopover()"><i class="close-light-eqx-icon"></i></a>
+													</div>
+													<div class="popover-body">
+														<h5>Popover Content</h5>
+														<span>This is the content of my tooltip placed in a seperate html tag!</span>
+														<span>This is the content of my tooltip placed in a seperate html tag!</span>
+													</div>
+													<div class="popover-footer">
+														<button type="button" class="eqx-btn eqx-btn-primary cta-btn">CTA</button>
+														<button type="button" class="eqx-btn eqx-btn-basic" onclick="closePopover()">Cancel</button>
+													</div>
+								    		</div>
+											</div>
+										</div>
+										<div class="topm bottomm">
+											<h2 class="bottomm">Size</h2>
+										</div>
+										<div class="topm bottomm">
+										<!-- Popover Small -->
+											<a href="#none" class="popover" data-tooltip-content=".small-popover-contents" data-tooltipster='{"side":"top"}' >Popover Small</a>
+											<div class="popover_templates" style="display:none;">
+												<div class="small-popover-contents popover-contents">
+													<div class="popover-header">
+														<h4 class="popover-title">This is a Popover Title!</h4>
+														<a onclick="closePopover()"><i class="close-light-eqx-icon"></i></a>
+													</div>
+													<div class="popover-body">
+														<h5>Popover Content</h5>
+														<span>This is the content of my tooltip placed in a seperate html tag!</span>
+														<span>This is the content of my tooltip placed in a seperate html tag!</span>
+													</div>
+													<div class="popover-footer">
+														<button type="button" class="eqx-btn eqx-btn-primary cta-btn">CTA</button>
+														<button type="button" class="eqx-btn eqx-btn-basic" onclick="closePopover()">Cancel</button>
+													</div>
+								    		</div>
+											</div>
+										</div>
+										<div class="topm bottomm">
+										<!-- Popover Large -->
+											<a href="#none" class="popover" data-tooltip-content=".large-popover-contents" data-tooltipster='{"side":"top","popover-size":"large"}' >Popover Large</a>
+											<div class="popover_templates" style="display:none;">
+												<div class="large-popover-contents popover-contents">
+													<div class="popover-header">
+														<h4 class="popover-title">This is a Popover Title!</h4>
+														<a onclick="closePopover()"><i class="close-light-eqx-icon"></i></a>
+													</div>
+													<div class="popover-body">
+														<h5>Popover Content</h5>
+														<span>This is the content of my tooltip placed in a seperate html tag!</span>
+														<span>This is the content of my tooltip placed in a seperate html tag!</span>
+														<span>This is the content of my tooltip placed in a seperate html tag!</span>
+													</div>
+													<div class="popover-footer">
+														<button type="button" class="eqx-btn eqx-btn-primary cta-btn">CTA</button>
+														<button type="button" class="eqx-btn eqx-btn-basic" onclick="closePopover()">Cancel</button>
+													</div>
+								    		</div>
+											</div>
+											<!-- Popover Extra Small -->
+												<a href="#none" class="popover" data-tooltip-content=".extra-small-popover-contents" data-tooltipster='{"side":"right","popover-size":"extra-small"}'>Popover Extra Small</a>
+												<div class="popover_templates" style="display:none;">
+													<div class="extra-small-popover-contents popover-contents">
+														<div class="popover-body">
+															<span>Aenean lacinia bibendum nulla sed consectetur sed consectetur.<a> Link</a> </span>
+														</div>
+									    		</div>
+												</div>
+											<div class="topm bottomm">
+												<h2 class="bottomm">Theme</h2>
+											</div>
+											<div class="topm bottomm">
+												<a href="#none" class="popover" data-tooltip-content=".extra-small-popover-contents" data-tooltipster='{"side":"right","popover-size":"extra-small", "theme":"dark"}'>Dark</a>
+												<div class="popover_templates" style="display:none;">
+													<div class="extra-small-popover-contents popover-contents">
+														<div class="popover-body">
+															<span>Aenean lacinia bibendum nulla sed consectetur sed consectetur.<a> Link</a> </span>
+														</div>
+									    		</div>
+												</div>
+											</div>
+											<div class="topm bottomm">
+												<a href="#none" class="popover" data-tooltip-content=".extra-small-popover-contents" data-tooltipster='{"side":"right","popover-size":"extra-small", "theme":"light"}'>Light</a>
+												<div class="popover_templates" style="display:none;">
+													<div class="extra-small-popover-contents popover-contents">
+														<div class="popover-body">
+															<span>Aenean lacinia bibendum nulla sed consectetur sed consectetur.<a> Link</a> </span>
+														</div>
+									    		</div>
+												</div>
+											</div>
+										</div>
+									</script>
+								</div>
+							</div>
+						</div>
+					</div>
+      </div>
+    </div>
+  </div>
+  <script src="js/jquery-2.1.1.js"></script>
+  <script src="js/offscreen.js"></script>
+	<script src="js/prism.js"></script>
+	<script src="js/styled-select.js"></script>
+	<script src="js/tooltipster.bundle.js"></script>
+	<script src="js/main.js"></script>
+
+	<script>
+		// transform targeted select into nice-select
+    create_nice_select(document.getElementById('dropdownSelector'));
+	</script>
+</body>
+</html>

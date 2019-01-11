@@ -1,0 +1,57 @@
+//rounded property
+@mixin rounded($radius: .2rem, $left: true, $right: true)
+  @if $left
+    border-top-left-radius: $radius
+    border-bottom-left-radius: $radius
+  @if $right
+    border-top-right-radius: $radius
+    border-bottom-right-radius: $radius
+
+//box-shadow property
+@mixin box-shadow($top, $left, $blur, $spread, $color, $inset: false)
+  @if $inset
+    -webkit-box-shadow:inset $top $left $blur $spread $color
+    -moz-box-shadow:inset $top $left $blur $spread $color
+    box-shadow:inset $top $left $blur $spread $color
+  @else
+    -webkit-box-shadow: $top $left $blur $spread $color
+    -moz-box-shadow: $top $left $blur $spread $color
+    box-shadow: $top $left $blur $spread $color
+
+//center property
+@mixin center($xy:xy)
+  @if $xy == xy
+    left: 50%
+    top: 50%
+    bottom: auto
+    right: auto
+    @include transform(translateX(-50%) translateY(-50%))
+
+  @else if $xy == x
+    left: 50%
+    right: auto
+    @include transform(translateX(-50%))
+
+  @else if $xy == y
+    top: 50%
+    bottom: auto
+    @include transform(translateY(-50%))
+
+
+// antialiasing mode font rendering
+@mixin font-smoothing
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+//column property
+@mixin column($percentage, $float-direction:left)
+  width: 100% * $percentage
+  float: $float-direction
+
+//transition property
+@mixin transition($args...)
+    -moz-transition:    $args
+    -o-transition:      $args
+    -webkit-transition: $args
+    transition:         $args
+ 

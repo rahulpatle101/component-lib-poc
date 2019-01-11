@@ -1,0 +1,39 @@
+//Set minimum viewport width
+.main-container
+  min-width: $small
+  padding: 30px
+
+  // temp class for tbd styles
+  p.tbd
+    font-style: italic
+    color: $silver
+
+
+// Main Dashboard layout
+.main-container
+  .content-column
+    @include flex(0 100%)
+
+  .sidebar-column
+    @include flex(0 26rem)
+
+@include breakpoint($sm-transition, "max-width")
+  .main-container
+    flex-flow: row wrap
+    .content-column
+      min-height: 30rem
+      padding: 1.5rem
+      @include order(2)
+    .sidebar-column
+      @include flex(0 100%)
+      .sidebar-content
+        padding: 1.5rem 1.5rem 0 1.5rem
+        .sidebar-message-center
+          display: none
+// Gridlex helpers
+.no-gutter > [class*='col']
+  padding-right: 0
+  padding-left: 0
+
+.no-bottom-space > [class*='col']
+  padding-bottom: 0

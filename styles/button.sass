@@ -1,0 +1,95 @@
+.eqx-btn
+	padding: 10px 20px
+	font-size: 16px
+	border-style: none
+	border-radius: 4px
+	cursor: pointer
+	outline: none
+	color: $white
+	&.eqx-btn-primary
+		background-color: $edwin
+		border: 1px solid $edwin
+		&:hover, &.active
+			background-color: darken($edwin, 10%)
+	&.eqx-btn-basic
+		background: transparent
+		color: $silver
+		border: 1px solid $silver
+		&.active, &:hover
+			border-color: $edwin
+			color: $edwin
+	&.eqx-btn-danger
+		background: $persian
+		color: $white
+		border: 1px solid $persian
+		&:hover
+			background-color: darken($persian, 10%)
+	&.eqx-btn-disabled
+		background: $athens
+		color: $silver
+		border: 1px solid $athens
+		cursor: auto
+	&.eqx-btn-sm
+		font-size: 14px
+	&.eqx-btn-lg
+		font-size: 18px
+	&.eqx-btn-fluid
+		width: 100%
+
+.eqx-btn-group
+	display: flex
+	.eqx-btn
+		border-top-right-radius: 0
+		border-bottom-right-radius: 0
+		border-top-left-radius: 0
+		border-bottom-left-radius: 0
+		&:last-child
+			border-bottom-right-radius: 4px
+			border-top-right-radius: 4px
+		&:first-child
+			border-bottom-left-radius: 4px
+			border-top-left-radius: 4px
+		&.eqx-btn-primary
+			border-left: 0.2px solid lighten($edwin, 30%)
+			&:last-child
+				border-left: 0.8px solid lighten($edwin, 30%)
+			&:first-child
+				border-left: 0.8px solid lighten($edwin, 30%)
+
+.eqx-btn-group-vertical
+	display: inline-flex
+	flex-direction: column
+	border: 1px solid $edwin
+	border-top-right-radius: 4px
+	border-bottom-right-radius: 4px
+	border-top-left-radius: 4px
+	border-bottom-left-radius: 4px
+	.eqx-btn
+		display: block
+		width: 100%
+		border-left-width: 0
+		border-right-width: 0
+		border-top-width: 0
+		botder-bottom-width: 0
+		&:last-child
+			border-bottom-width: 0
+		&:first-child
+			border-top-width: 0
+		&:not(last-child)
+			border-top: 1px solid $edwin
+			border-radius: 0
+		&.eqx-btn-primary
+			
+
+/* Inline Icon with Link */
+
+a
+	i
+		text-decoration: none
+		display: inline-block
+		cursor: pointer
+		vertical-align: bottom
+		&.after
+			padding-left: 8px
+		&.before
+			padding-right: 8px

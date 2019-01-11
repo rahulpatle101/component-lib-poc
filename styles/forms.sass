@@ -1,0 +1,484 @@
+$input-padding: .6rem .4rem
+.top
+  padding-top: 1rem
+
+.double-top
+  padding-top: 2rem
+
+.topm
+  margin-top: 1rem
+
+.double-topm
+  margin-top: 2rem
+
+.bottom
+  padding-bottom: 1rem
+
+.double-bottom
+  padding-bottom: 2rem
+
+.bottomm
+  margin-bottom: 1rem
+
+.double-bottomm
+  margin-bottom: 2rem
+
+.indent-1
+  margin-left: 1rem
+
+.leftm
+  margin-left: 1rem
+
+
+input, textarea
+  display: block
+  margin: .5rem 0
+  padding: $input-padding
+  font-size: .8rem
+  outline: none
+  box-sizing: border-box
+  border-style: none
+  border: 1px solid $alabaster
+  border-radius: 2px
+  background: $haze
+  transition: all .3s
+  &:focus
+    border: 1px solid $edwin
+    outline: 0
+    -webkit-box-shadow: 0 0 0 2px lighten($edwin, 25%)
+    box-shadow: 0 0 0 2px lighten($edwin, 25%)
+textarea
+  min-width: 300px
+.hint-text
+  p
+    color: $stack
+    line-height: 1.5
+    font-size: 14px
+    -webkit-transition: color 0.15s cubic-bezier(0.215, 0.61, 0.355, 1)
+    transition: color 0.15s cubic-bezier(0.215, 0.61, 0.355, 1)
+    margin-top: -2px
+  &.warning-hint-text
+    p
+      color: $rob-roy
+  &.danger-hint-text
+    p
+      color: $persian
+  &.success-hint-text
+    p
+      color: $mantis
+fieldset
+  position: relative
+  margin: 1rem 0
+  label
+    color: #4a4a4a
+    line-height: 1.4rem
+    top: 12px
+    left: 8px
+    position: absolute
+    @include transition(0.2s ease all)
+
+.horizontal-input
+  label
+    margin-right: .6rem
+
+input[type="radio"]
+  display: inline-block
+  border: 2px solid red
+  padding: 22px
+
+.upload-btn-wrapper
+  position: relative
+  overflow: hidden
+  display: inline-block
+  height: 100%
+
+.upload-btn-wrapper
+  input[type=file]
+    width: 184%
+    height: 100%
+    cursor: pointer
+    position: absolute
+    left: -120px
+    font-size: 19px
+    top: 0
+    opacity: 0
+    background: transparent
+  a
+    &.upload-btn
+      background-color: $white
+      padding: 10px 20px
+      font-size: 16px
+      border: 1px solid $link-water
+      color: $link-water
+      border-radius: 3px
+      text-align: center
+      cursor: pointer
+      display: inline-block
+      transition: all .3s cubic-bezier(.645,.045,.355,1)
+      .upload-eqx-icon
+        padding-right: 10px
+    &:hover
+      color: $edwin
+      border-color: $edwin
+      text-decoration: none
+    button
+      cursor: pointer
+
+// Buttons
+.button
+  font-size: 1rem
+  display: inline-block
+  font-family: 'proxima_novasemibold', helvetica, sans-serif
+  background: $edwin
+  letter-spacing: .01rem
+  text-align: center
+  padding: 1rem 2rem
+  color: $white
+  box-sizing: border-box
+  margin: .5rem 0
+  @include rounded
+  cursor: pointer
+
+.button-medium
+  font-size: 1.2rem
+
+.button-large
+  font-size: 1.4rem
+
+// Search Field
+.dashboard-search
+  input[type="text"]
+    display: inline-block
+    margin: 0
+    width: 9rem
+    @include rounded($right: false)
+    margin-right: -5px
+  .submit
+    margin: 0
+    font-size: .9rem
+    padding: $input-padding
+    display: inline-block
+    border: 1px solid $edwin
+    @include rounded($left: false)
+    background: $edwin
+    color: $white
+    cursor: pointer
+    &:hover
+      background: darken($edwin, 10%)
+
+//Dropdown Select
+.dropdown-select
+  height: 100px
+
+.styled-select
+  min-width: 300px
+  -webkit-tap-highlight-color: transparent
+  background-color: #fff
+  background: rgba(255, 255, 255, 1)
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(247, 247, 247, 1) 100%)
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(100%, rgba(247, 247, 247, 1)))
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(247, 247, 247, 1) 100%)
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(247, 247, 247, 1) 100%)
+  background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(247, 247, 247, 1) 100%)
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(247, 247, 247, 1) 100%)
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f7f7f7', GradientType=0 )
+  border-radius: 2.5px
+  border: solid 1px #e0e7ee
+  box-sizing: border-box
+  clear: both
+  cursor: pointer
+  display: block
+  float: left
+  font-family: inherit
+  font-size: 14px
+  font-weight: normal
+  height: 42px
+  line-height: 40px
+  outline: none
+  padding-left: 18px
+  padding-right: 30px
+  position: relative
+  text-align: left !important
+  -webkit-transition: all 0.2s ease-in-out
+  transition: all 0.2s ease-in-out
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+  white-space: nowrap
+  width: auto
+  &:hover
+    border-color: #d0dae5
+  &:active, &.open, &:focus
+    // border-color: #88bfff;
+  &:after
+    border-bottom: 2px solid #3F3F3F
+    border-right: 2px solid #3F3F3F
+    content: ''
+    display: block
+    height: 6px
+    margin-top: -4px
+    pointer-events: none
+    position: absolute
+    right: 12px
+    top: 50%
+    -webkit-transform-origin: 66% 66%
+    -ms-transform-origin: 66% 66%
+    transform-origin: 66% 66%
+    -webkit-transform: rotate(45deg)
+    -ms-transform: rotate(45deg)
+    transform: rotate(45deg)
+    -webkit-transition: all 0.15s ease-in-out
+    transition: all 0.15s ease-in-out
+    width: 6px
+  &.open
+    &:after
+      -webkit-transform: rotate(-135deg)
+      -ms-transform: rotate(-135deg)
+      transform: rotate(-135deg)
+    .list
+      -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5)
+      -moz-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5)
+      box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5)
+      opacity: 1
+      pointer-events: auto
+      -webkit-transform: scale(1) translateY(0)
+      -ms-transform: scale(1) translateY(0)
+      transform: scale(1) translateY(0)
+  &.disabled
+    border-color: #e7ecf2
+    color: #90a1b5
+    pointer-events: none
+    &:after
+      border-color: #cdd5de
+  &.wide
+    width: 100%
+    .list
+      left: 0 !important
+      right: 0 !important
+  &.right
+    float: right
+    .list
+      left: auto
+      right: 0
+  &.small
+    font-size: 12px
+    height: 36px
+    line-height: 34px
+    &:after
+      height: 4px
+      width: 4px
+    .option
+      line-height: 34px
+      min-height: 34px
+  .list
+    background-color: #fff
+    border-radius: 2.5px
+    box-shadow: 0 0 0 1px rgba(68, 88, 112, 0.11)
+    box-sizing: border-box
+    margin-top: 2px
+    opacity: 0
+    overflow: hidden
+    padding: 0
+    pointer-events: none
+    position: absolute
+    top: 100%
+    left: 0
+    -webkit-transform-origin: 50% 0
+    -ms-transform-origin: 50% 0
+    transform-origin: 50% 0
+    -webkit-transform: scale(0.75) translateY(-21px)
+    -ms-transform: scale(0.75) translateY(-21px)
+    transform: scale(0.75) translateY(-21px)
+    -webkit-transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out
+    transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out
+    z-index: 9
+    &:hover .option:not(:hover)
+      background-color: transparent !important
+    &::before
+      content: ""
+      position: absolute
+      top: -5px
+      right: 45%
+      border-left: 5px solid transparent
+      border-right: 5px solid transparent
+      border-bottom: 5px solid #EDF1F6
+  &.right .list:before
+    right: 10px
+  .list li::first-child
+    border-top-right-radius: 2px
+  .option
+    min-width: 298px
+    box-sizing: border-box
+    cursor: pointer
+    font-weight: 400
+    line-height: 40px
+    list-style: none
+    min-height: 40px
+    outline: none
+    padding-left: 18px
+    padding-right: 29px
+    text-align: left
+    -webkit-transition: all 0.2s
+    transition: all 0.2s
+    &:hover, &.focus
+      background-color: #EDF1F6
+    &.selected
+      &.focus
+        background-color: #EDF1F6
+      font-weight: bold
+    &.disabled
+      background-color: transparent
+      color: #90a1b5
+      cursor: default
+
+.transparent
+  .styled-select
+    background: transparent
+    min-width: auto
+    -webkit-box-shadow: none
+    -moz-box-shadow: none
+    box-shadow: none
+    border: none
+    &::after
+      top: 45%
+    .option
+      min-width: auto
+    .list
+      overflow: visible
+  &.light
+    .current
+      color: #fff
+    .styled-select
+      &:after
+        border-bottom: solid 1.2px #fff
+        border-right: solid 1.2px #fff
+      .list::before
+        border-bottom: 5px solid #fff
+
+select
+  display: none
+
+.no-csspointerevents .styled-select
+  .list
+    display: none
+  &.open .list
+    display: block
+
+//Radio & Checkbox
+
+/* The container */
+.radio-container, .checkbox-container
+  display: block
+  position: relative
+  padding-left: 35px
+  margin-bottom: 12px
+  cursor: pointer
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+/* Hide the browser's default radio button */
+.radio-container input, .checkbox-container input
+  position: absolute
+  opacity: 0
+  cursor: pointer
+/* Create a custom radio button */
+.radio-check, .checkbox-check
+  position: absolute
+  top: -3px
+  left: 0
+  height: 20px
+  width: 20px
+  border: 2px solid $athens
+  border-radius: 50%
+  transition: .3s all
+/* On mouse-over, add a grey background color */
+.radio-container:hover input ~ .radio-check, .checkbox-container:hover input ~ .checkbox-check
+  border: 2px solid $edwin
+/* When the radio button is checked, add a blue background */
+.radio-container input:checked ~ .radio-check, .checkbox-container input:checked ~ .checkbox-check
+  background-color: $edwin
+  border: 2px solid $edwin
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.radio-check:after, .checkbox-check:after
+  content: ""
+  position: absolute
+  display: none
+/* Show the indicator (dot/circle) when checked */
+.radio-container input:checked ~ .radio-check:after, .checkbox-container input:checked ~ .checkbox-check:after
+  display: block
+/* Style the indicator (dot/circle) */
+.radio-container .radio-check:after
+  top: 4px
+  left: 4px
+  width: 8px
+  height: 8px
+  border-radius: 50%
+  background: $white
+
+/*Checkbox after */
+.checkbox-check
+  border-radius: 4px
+.checkbox-container .checkbox-check:after
+  left: 5px
+  width: 4px
+  height: 9px
+  border: solid $white
+  border-width: 0 3px 3px 0
+  -webkit-transform: rotate(45deg)
+  -ms-transform: rotate(45deg)
+  transform: rotate(45deg)
+
+/* File Upload*/
+
+.file-upload
+  position: relative
+  .drag-file-container
+    position: relative
+    height: 200px
+    display: block
+    margin: .5rem 0
+    padding: $input-padding
+    font-size: .8rem
+    outline: none
+    width: 100%
+    box-sizing: border-box
+    border-style: none
+    border: 3px dotted $edwin
+    border-radius: 2px
+    background: $haze
+    transition: all .3s
+    cursor: pointer
+    .drag-file-text
+      margin-top: 30px
+      p
+        width: 100%
+        text-align: center
+        color: $black
+        font-size: 20px
+    input
+      position: absolute
+      margin: 0
+      padding: 0
+      width: 100%
+      height: 100%
+      outline: none
+      opacity: 0
+      top: 0
+  button
+    border: 2px solid $athens
+    width: 130px
+    height: 40px
+    font-size: 16px
+    border-radius: 3px
+    transition: all .2s ease
+    outline: none
+    position: absolute
+    top: 150px
+    left: 45%
+    cursor: pointer
+    color: $edwin
+    &:hover
+      background: $edwin
+      color: $white

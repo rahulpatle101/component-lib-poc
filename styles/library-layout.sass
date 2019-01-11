@@ -1,0 +1,269 @@
+.header
+	top: 0
+	left: 0
+	width: 100%
+	z-index: 1000
+	-webkit-box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.1)
+	-moz-box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.1)
+	box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.1)
+.content-column
+	padding-top: 0
+	.panel
+		padding: 20px
+		width: 100%
+		background-color: $white
+		resize: both
+		display: inline-block
+		vertical-align: top
+		border-radius: 8px
+		margin-bottom: 20px
+		-webkit-box-shadow: 0px 70px 40px -50px rgba(0, 0, 0, 0.03), 0px 3px 20px rgba(0, 0, 0, 0.17)
+		-moz-box-shadow: 0px 70px 40px -50px rgba(0, 0, 0, 0.03), 0px 3px 20px rgba(0, 0, 0, 0.17)
+		box-shadow: 0px 70px 40px -50px rgba(0, 0, 0, 0.03), 0px 3px 20px rgba(0, 0, 0, 0.17)
+		.panel-heading
+			margin-bottom: 10px
+			position: relative
+			padding: 15px 0px 20px
+			border-top-left-radius: 1px
+			border-top-right-radius: 1px
+			font-family: 'proxima_novasemibold'
+		.panel-body
+			position: relative
+			margin: 20px 20px 30px
+			.tooltip-position
+				a
+					margin: 15px 0px
+					display: table
+			.icon-list
+				padding-left: 0
+				list-style: none
+				display: flex
+				flex-wrap: wrap
+				margin-bottom: 10px
+				li
+					width: 16.5%
+					min-height: 115px
+					padding: 28px 10px 10px 10px
+					font-size: 14px
+					line-height: 1.4
+					text-align: center
+					background-color: $haze
+					border: 1px solid $white
+					transition: .3s all
+					i
+						font-size: 20px
+					&:hover
+						color: $white
+						background-color: $edwin
+					.icon-text
+						display: block
+						text-align: center
+						word-wrap: break-word
+						padding-top: 12px
+			.color-list
+				padding-left: 0
+				list-style: none
+				float: left
+				margin-bottom: 10px
+				h5
+					margin: 5px 5px
+				li
+					min-width: 165px
+					height: 180px
+					float: left
+					padding: 0 0 10px 0
+					font-size: 14px
+					line-height: 1.4
+					text-align: left
+					border: 1px solid $athens
+					transition: .3s all
+					margin: 5px 5px
+					.color-info
+						padding: 10px
+					.color-box
+						height: 100px
+						&.white
+							background-color: $white
+							border-bottom: 1px solid $athens
+						&.black
+							background-color: $black
+						&.equinix-red
+							background-color: $equinix
+						&.sea-blue
+							background-color: $sea
+						&.science
+							background-color: $science
+						&.dodger
+							background-color: $dodger
+						&.edwin
+							background-color: $edwin
+						&.deep-sky
+							background-color: $deep-sky
+						&.dark-candy-apple
+							background-color: $dark-candy-apple
+						&.persian
+							background-color: $persian
+						&.flamingo
+							background-color: $flamingo
+						&.bittersweet
+							background-color: $bittersweet
+						&.dark-salmon
+							background-color: $dark-salmon
+						&.blue-lagoon
+							background-color: $blue-lagoon
+						&.medium-aqua
+							background-color: $medium-aqua
+						&.morning-glory
+							background-color: $morning-glory
+						&.mantis
+							background-color: $mantis
+						&.yellow-green
+							background-color: $yellow-green
+						&.rob-roy
+							background-color: $rob-roy
+						&.apricot
+							background-color: $apricot
+						&.black-rock
+							background-color: $black-rock
+						&.licorice
+							background-color: $licorice
+						&.gun-powder
+							background-color: $gun-powder
+						&.slate
+							background-color: $slate
+						&.silver
+							background-color: $silver
+						&.link-water
+							background-color: $link-water
+						&.athens
+							background-color: $athens
+						&.haze
+							background-color: $haze
+						&.alabaster
+							background-color: $alabaster
+						&.dark-grey
+							background-color: $dark-grey
+						&.stack
+							background-color: $stack
+						&.dove
+							background-color: $dove
+		.panel-footer
+			width: 100%
+			display: inline-block
+			border-radius: 1px
+			border-top: 1px solid $athens
+			padding: 18px 0
+    		font-size: 16px
+			background-color: transparent
+			.toggle-codesnippet
+				a
+					cursor: pointer
+					display: inline-block;
+					width: 100%
+				.code-snippet
+					display: none
+	&:first-child
+		panel
+			padding-top: 0
+.sidebar-column
+	.sidebar-content
+		position: sticky
+		top: 0
+		.panel
+			background: $licorice
+			.panel-heading
+				h1
+					color: $white
+					padding: 20px 25px
+			.panel-body
+				&.accordion
+					margin: 0 auto
+					padding: 0
+					top: 188px
+					bottom: 0
+					position: sticky
+					overflow-y: scroll
+					height: 800px
+					label
+						display: block
+						font-size: 16px
+						line-height: 16px
+						color: $link-water
+						cursor: pointer
+						text-transform: uppercase
+						-webkit-transition: all .2s ease-out
+						-moz-transition: all .2s ease-out
+					ul
+						list-style: none
+						margin: 0
+						padding: 0
+					li
+						margin: 0
+						padding: 0
+						position: relative
+						i
+							position: absolute
+							top: 18px
+							left: 30px
+							font-weight: bold
+							-webkit-transition: all 400ms ease
+							-moz-transition: all 400ms ease
+							color: $link-water
+							&.angle-down-eqx-icon
+								visibility: hidden
+								opacity: 0
+					[type=checkbox]
+						display: none
+					ul li
+						a
+							display: block
+							padding: 20px 20px 20px 60px
+							text-transform: uppercase
+							color: $link-water
+							text-decoration: none
+							&:hover, &.active
+								-webkit-transition: all .1s ease-out
+								-moz-transition: all .3s ease-out
+								background-color: $science
+						label
+							padding: 20px 20px 20px 60px
+					ul li
+						label:hover
+						.sub-content
+							height: 0px
+							border-top: 0
+							overflow: hidden
+							-webkit-transition: all 400ms ease
+							-moz-transition: all 400ms ease
+						[type=checkbox]:checked ~ label ~ .sub-content
+							height: auto
+							background: $black-rock
+						[type=checkbox]:checked ~ i.angle-down-eqx-icon
+							visibility: visible
+							opacity: 1
+						[type=checkbox]:checked ~ i.angle-right-eqx-icon
+							visibility: hidden
+							opacity: 0
+
+
+// Tooltip Section
+.custom-position-tooltip-container
+	width: 400px
+	.custom-position-row-1
+		display: flex
+		flex-direction: row
+		justify-content: space-around
+	.custom-position-row-2
+		display: flex
+		justify-content: space-between
+		.placement-left
+			display: flex
+			flex-direction: column
+		.placement-right
+			display: flex
+			flex-direction: column
+			text-align: right
+	.custom-position-row-3
+		display: flex
+		flex-direction: row
+		justify-content: space-around

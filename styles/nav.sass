@@ -1,0 +1,212 @@
+nav.main-nav
+  min-width: 48rem
+  background: $alabaster
+  padding: 0
+  border-top: 1px solid $athens
+  border-bottom: 1px solid $athens
+  .horizontal-nav, .hamburger-nav
+    color: $dark-grey
+    display: inline-block
+    padding: 0
+    a:hover
+      text-decoration: none
+
+  .horizontal-nav
+    @include transition(all .3s)
+    opacity: 0
+    visibility: hidden
+    position: absolute
+    left: -200rem
+    margin-left: 1.3rem
+    li, li.home a
+      font-size: .85rem
+      display: inline-block
+      color: $dark-grey
+      span
+        text-align: center
+        line-height: 1rem
+        display: inline-block
+        padding: 1rem .6rem 1.38rem .6rem
+        border-top: solid $alabaster .3rem
+        &:before
+          display: block
+          content: attr(data-bold)
+          font-family: 'proxima_novasemibold'
+          height: .0001rem
+          color: transparent
+          overflow: hidden
+          visibility: hidden
+      &:hover > span, &.active > span
+        font-family: 'proxima_novasemibold'
+        color: $black
+        border-top: solid $edwin .3rem
+      // In case there is dropdown-content but no .dropdown class
+      .dropdown-content
+        display: none
+    li.home a span
+      line-height: .9rem
+      padding: .945rem 1rem 1.3rem 1rem
+      vertical-align: -.12rem
+      i
+        font-size: 1.2rem
+        line-height: .85rem
+
+    li.dropdown
+      position: relative
+      &:before
+        position: absolute
+        right: .4rem
+        top: 1.3rem
+        font-family: 'equinix'
+        content: "\f107"
+      span
+        position: relative
+        padding-right: 1.3rem
+        &::after
+          content: ""
+          z-index: 600
+          opacity: 0
+          visibility: hidden
+          position: absolute
+          width: 100%
+          background: $alabaster
+          height: 1rem
+          left: 0
+          bottom: -.5rem
+      &:hover > span
+        @include box-shadow(1px, 1px, 5px, 0px, rgba(0, 0, 0, .4), false)
+        @include transition(all .3s, border 0s, margin 0s, padding 0s)
+
+      // show dropdown content on hover
+      &:hover span > .dropdown-content
+        @include transition(all .2s)
+        z-index: 500
+        opacity: 1
+        visibility: visible
+        overflow: visible
+      // display the shadow box mask to cover shadow between nav and content on hover
+      &:hover span:after
+        opacity: 1
+        visibility: visible
+
+
+      // dropdown content styles including container
+      .dropdown-content
+        @include box-shadow(1px, 1px, 5px, 0px, rgba(0, 0, 0, .4), false)
+        white-space: normal
+        padding: 0
+        padding-bottom: 1rem
+        color: $black
+        position: absolute
+        display: inline-block
+        width: 100%
+        top: 3.4rem
+        left: 0
+        z-index: 400
+        opacity: 0
+        visibility: hidden
+        overflow: hidden
+        background: $alabaster
+        border-radius: 0 0 3px 3px
+        &.small
+          width: 35vw
+          max-width: 20.5rem
+        &.medium
+          width: 60vw
+          max-width: 40rem
+        &.large
+          width: 85vw
+          max-width: 58rem
+        &.right-edge
+          left: auto
+          right: 0
+        &.shift
+          right: .27rem
+        h5
+          font-size: .65rem
+          color: $stack
+          font-family: 'proxima_novasemibold'
+          letter-spacing: 1px
+          height: 2rem
+          line-height: 1rem
+          padding: .5rem .5rem .5rem 1rem
+        &.large h5
+          height: 4rem
+        p
+          font-family: 'proxima_novaregular'
+          font-size: .8rem
+          color: $link-water
+
+        // overide gridlex default gutters
+        [class*="col"]
+          padding-bottom: 0
+          position: relative
+          padding-left: 0
+          padding-right: 0
+          &:after
+            content: " "
+            position: absolute
+            display: inline-block
+            width: 1px
+            height: 95%
+            border-right: 1px solid $link-water
+            bottom: 0
+            right: 0
+          &:last-child:after
+            border: none
+        [class*="grid"]
+          margin-left: 0
+          margin-right: 0
+
+        .dropdown-column
+          text-align: left
+          position: relative
+          white-space: initial
+          padding-top: 1rem
+          a
+            @include transition(all .3s)
+            font-family: 'proxima_novaregular'
+            color: $primary-font-color
+            display: inline-block
+            width: 100%
+            margin-bottom: 1px
+            padding: .8rem 1rem
+            line-height: 1.2rem
+            &:hover
+              color: $edwin
+              background-color: $athens
+
+  .hamburger-nav
+    @include transition(all .3s)
+    text-align: right
+    height: 3.4rem
+    a
+      display: inline-block
+      position: absolute
+      right: 0
+      span
+        font-size: 1.2rem
+        display: inline-block
+        padding: 1rem 1.6rem
+
+@include breakpoint($small)
+  nav.main-nav .horizontal-nav
+    opacity: 1
+    visibility: visible
+    position: static
+  nav.main-nav .hamburger-nav
+    opacity: 0
+    visibility: hidden
+    position: absolute
+    top: -20rem
+
+@include breakpoint($sm-transition)
+  nav.main-nav .horizontal-nav li
+    &.dropdown
+      font-size: 1rem
+    span
+      font-size: 1rem
+  nav.main-nav .horizontal-nav li.dropdown .dropdown-content
+    top: 3.6rem
+    &.large h5
+      height: 3rem
