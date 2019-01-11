@@ -71,7 +71,7 @@ node-sass -w styles/main.sass styles/main.css
 
 ```
 
-* Run live-server
+* Open new terminal from same directory and run live-server
 
 ```sh
 
