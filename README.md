@@ -1,7 +1,7 @@
 # Static UI Component Library - v1
 
 This is a work in progress version of static ui component library build with HTML, CSS and JavaScript, which was put together as a POC for further development. 
-DEMO [https://rahulpatle101.github.io/component-lib-poc/]
+[DEMO](https://rahulpatle101.github.io/component-lib-poc/)
 
 ## Tools/language used to build
 * HTML
